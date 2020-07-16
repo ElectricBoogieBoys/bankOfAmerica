@@ -1,8 +1,13 @@
-let test = document.getElementById('test');
+// setting up our objects//
+let name = document.getElementById('username');
+let pass = document.getElementById('password')
 let form = document.getElementById('form');
 
-form.addEventListener("keyup", testWrite);
+form.addEventListener("submit", testWrite);
 
+//test console logging the values//
 function testWrite(){
-  console.log(test.value); 
+  event.preventDefault();
+  console.log(name.value, pass.value);
+  
 };
