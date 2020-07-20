@@ -13,21 +13,20 @@
         <span></span> 
         <!--This form will collect the username and passwod of the person tryig to log in.-->
         <div>
+            <h1></h1>
             <form id="form">
-                <label class="" name="Username:">
-                    <input id="username" class="" type="text" name="username">
+                <label class="" name="password">
+                    <input id="password" class="" type="password" name="passord">
                 </label>
-                <label class="" name="Password:">
-                    <!--This button will allow the user to reset their password if they forget it. It should appear horizontally parallel to the password label above the password input field.-->
-                    <button id="forgotPassword" class="" >Forgot password?</button>
-                    <input id="password" class="" type="password" name="password">
+                <label class="" name="confirm">
+                    <input id="confirm" class="" type="password" name="confirm">
                 </label>
                 <label>
                     <input id="loginButton" class="" type="submit" name="Log in">
                 </label>
             </form>
             <!--This p tag represents where the error messages will show up.-->
-            <p id="" class=""></p>
+            <p id="error"></p>
         </div>
         <script src="form.js"></script>
     </body>
