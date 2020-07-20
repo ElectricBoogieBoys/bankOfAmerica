@@ -1,10 +1,37 @@
-<!DOCTYPE: html>
+
+<!DOCTYPE html>
 <html>
-<head>
-<link rel="stylesheet" type="text/css">
-<head>
-<body>
 
-
+    <head>
+        <!--Definately change the title before we present this!-->
+        <title>Boogie Boy Bank </title>
+        <link rel="stylesheet" type="text/css" href="index.css">
+    </head>
+    
+    <body>
+        <!--This span will eventually be the navigation bar. (placeholder)-->
+        <span></span> 
+        <!--This form will collect the username and passwod of the person tryig to log in.-->
+        <div>
+            <form id="form">
+                <label class="" name="Username:">
+                    <input id="username" class="" type="text" name="username">
+                </label>
+                <label class="" name="Password:">
+                    <!--This button will allow the user to reset their password if they forget it. It should appear horizontally parallel to the password label above the password input field.-->
+                    <button id="forgotPassword" class="" >Forgot password?</button>
+                    <input id="password" class="" type="password" name="password">
+                </label>
+                <label>
+                    <input id="loginButton" class="" type="submit" name="Log in">
+                </label>
+            </form>
+            <!--This p tag represents where the error messages will show up.-->
+            <p id="" class=""></p>
+        </div>
+        <script src="form.js"></script>
+    </body>
 
 </html>
+
+
