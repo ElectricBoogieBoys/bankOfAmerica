@@ -8,10 +8,16 @@ form.addEventListener("submit", testWrite);
 //test console logging the values//
 function testWrite(){
   event.preventDefault();
-  if((pass.value)===(confirm.value)){
-  console.log(confirm.value, pass.value);
+  let re = /^(?=.{8,20}$)(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*\W).*$/
+  if(re.test(pass.value)){
+    console.log('passed regex text')
+    if((pass.value)===(confirm.value)){
+      console.log(confirm.value, pass.value);
+    }else{
+    error.innerHTML = "<p> Your passwords don't seem to match, please try again </p>"
+    } 
   }else{
-    error.innerHTML = "Your passwords don't seem to match, please try again"
-  }  
+    
+  } 
   
 };

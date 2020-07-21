@@ -10,25 +10,33 @@
     
     <body>
         <!--This span will eventually be the navigation bar. (placeholder)-->
-        <span></span> 
+        <div id="header" class="header"></div> 
         <!--This form will collect the username and passwod of the person tryig to log in.-->
         <div>
             <h1></h1>
-            <form id="form">
+            <form id="form" class="form">
                 <label class="" name="password">
                     <p>enter password:</p>
-                    <input id="password" class="" type="password" name="passord">
+                    <input id="password" class="feild" type="password" name="passord">
                 </label>
                 <label class="" name="confirm">
                     <p>confirm password:</p>
-                    <input id="confirm" class="" type="password" name="confirm">
+                    <input id="confirm" class="feild" type="password" name="confirm">
                 </label>
                 <label>
-                    <input id="loginButton" class="" type="submit" name="Log in">
+                    <input id="submitButton" class="submit" type="submit" name="Log in">
                 </label>
             </form>
             <!--This p tag represents where the error messages will show up.-->
-            <p id="error"></p>
+            <div id="error" class="errorHide">
+                <p>your password needs to</p> 
+                <ul>
+                    <li>have between 8 and 20 characters</li>
+                    <li>not have @#*()+={}/?~,.-_</li>
+                    <li>contain at least 1 number, 1 uppercase letter and 1 symbol</li>
+                    <li>Not repeat the same number or letter more than 3 times in a row</li>
+                </ul>
+            </div>
         </div>
         <script src="form.js"></script>
     </body>

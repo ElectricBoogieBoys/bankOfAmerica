@@ -1,3 +1,6 @@
 #test {
     font-family: sans-serif;
 }
+.errorHide{
+    visibility:hidden
+}
