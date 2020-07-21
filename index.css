@@ -1,3 +1,32 @@
-#testiden {
+
+.somethingsWrong {
     font-family: sans-serif;
+    color: rgb(255,0,0);
+    position: relative;
+    bottom: 610px;
+    left: 900px; 
+}
+.passwordStuff {
+    position: relative;
+}
+
+.firstInp {
+    position: relative;
+    top: 230px;
+    left: 50%;
+}
+.secondInp {
+    position: absolute;
+    top: 280px;
+    left: 50%;
+}
+#forgotPassword {
+    position: absolute;
+    top: 150%;
+    left: 50%;
+}
+#submitButton {
+    position: relative;
+    left: 50%;
+    top: 25em;
 }
