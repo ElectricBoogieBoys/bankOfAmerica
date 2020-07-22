@@ -28,13 +28,13 @@
                 </label>
             </form>
             <!--This p tag represents where the error messages will show up.-->
-            <div id="error" class="errorHide">
+            <div id="error">
                 <p>your password needs to</p> 
                 <ul>
-                    <li>have between 8 and 20 characters</li>
-                    <li>not have @#*()+={}/?~,.-_</li>
-                    <li>contain at least 1 number, 1 uppercase letter and 1 symbol</li>
-                    <li>Not repeat the same number or letter more than 3 times in a row</li>
+                    <li id="length">have between 8 and 20 characters</li>
+                    <li id="invalidCharacters">not have @#*()+={}/?~,.-_</li>
+                    <li id="varied">contain at least 1 number, 1 uppercase letter and 1 symbol</li>
+                    <li id="unique">Not repeat the same number or letter more than 3 times in a row</li>
                 </ul>
             </div>
         </div>

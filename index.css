@@ -1,6 +1,9 @@
 #test {
     font-family: sans-serif;
 }
-.errorHide{
-    visibility:hidden
+li{
+    color: red;
+}
+.liCorrect{
+    color: green;
 }
