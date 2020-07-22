@@ -1,5 +1,5 @@
 
-.somethingsWrong {
+/* .somethingsWrong {
     font-family: sans-serif;
     color: rgb(255,0,0);
     position: relative;
@@ -31,4 +31,13 @@
     left: 50%;
     top: 25em;
     width: 80px;
+} */
+#form {
+    outline: 1px solid red;
+    width: 50%;
+    height: 500px;
+    margin: 200px auto ;
+}
+label {
+    margin: 5% auto;
 }
