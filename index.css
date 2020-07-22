@@ -3,8 +3,9 @@
     font-family: sans-serif;
     color: rgb(255,0,0);
     position: relative;
-    bottom: 610px;
-    left: 900px; 
+    top: 250px;
+    left: 50%; 
+    margin: auto;
 }
 .passwordStuff {
     position: relative;
@@ -12,12 +13,12 @@
 
 .firstInp {
     position: relative;
-    top: 230px;
+    top: 210px;
     left: 50%;
 }
 .secondInp {
     position: absolute;
-    top: 280px;
+    top: 16.25em;
     left: 50%;
 }
 #forgotPassword {
@@ -29,4 +30,5 @@
     position: relative;
     left: 50%;
     top: 25em;
+    width: 80px;
 }
