@@ -1,30 +1,36 @@
-// // setting up our objects//
-// let name = document.getElementById('username');
-// let pass = document.getElementById('password')
-// let form = document.getElementById('form');
+let createFirstName = document.getElementById('createFirstName');
+let createLastName = document.getElementById('createLastName');
+let nameSubmit = document.getElementById('nameSubmit');
+// let nameArray = [];
 
-// form.addEventListener("submit", testWrite);
+// createFirstName.addEventListener('keyup', );
+// createLastName.addEventListener('keyup', );
+nameSubmit.addEventListener('click', validNames);
 
-// //test console logging the values//
-// function testWrite(){
-//   event.preventDefault();
-//   console.log(name.value, pass.value);
-  
-// };
+function validNames() {
+  console.log('clicker');
+  event.preventDefault();
 
-let createUsername = document.getElementById('createUsername');
-let createPassword = document.getElementById('createPassword');
-let usernameRegex = 
+  // let firstName = document.getElementById('createFirstName').value;
+  // let lastName = document.getElementById('createLastName').value;
+  let testCharacter = /^(?=.*\W).*$/
 
-createUsername.addEventListener('keyup', validUsername);
+  if(testCharacter.test(createFirstName.value)) {
+    console.log('bad first name');
 
-function validUsername() {
-  let createUsernameString = document.getElementById('createUsername').value;
-  let usernameCheck = str.includes(" ");
-  if(createUsernameString.length > usernameCheck) {
-    console.log('invalid username') ; 
   }
   else {
-    console.log('valid password');
+    console.log('good first name');
   }
+
+  if(testCharacter.test(createLastName.value)) {
+    console.log('bad last name');
+  }
+  else {
+    console.log('good last name');
+  }
+
+
+  // checks if either field is empty
+  //takes the inputs and saves them
 }

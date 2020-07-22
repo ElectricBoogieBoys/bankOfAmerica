@@ -1,48 +1,27 @@
-
 <!DOCTYPE html>
 <html>
 
     <head>
-        <!--Definately change the title before we present this!-->
-        <title>Boogie Boy Bank </title>
+        <title>Sign Up</title>
         <link rel="stylesheet" type="text/css" href="index.css">
     </head>
-    
+
     <body>
-        <!-- This span will eventually be the navigation bar. (placeholder) 
-        <span></span> 
-        This form will collect the username and passwod of the person tryig to log in.
-        <div>
-            <form id="form">
-                <label class="" name="Username:">
-                    <input id="username" class="" type="text" name="username">
-                </label>
-                <label class="" name="Password:">
-                    This button will allow the user to reset their password if they forget it. It should appear horizontally parallel to the password label above the password input field.
-                    <button id="forgotPassword" class="" >Forgot password?</button>
-                    <input id="password" class="" type="password" name="password">
-                </label>
-                <label>
-                    <input id="loginButton" class="" type="submit" name="Log in">
-                </label>
-            </form>
-            This p tag represents where the error messages will show up.
-            <p id="" class=""></p>
-        </div> -->
-        <span id="topSpacingBar">Stuff will go here eventually!</span>
-        <form>
-            <label> Username:
-                <input id="createUsername" class="CreationInputFields" type="text" name="username">
+        <span id="header"></span>
+        <h1>Let's get started</h1>
+        <p>Please provide the folllowing information for your enrollment.</p>
+        <form id="" class="form">
+            <label> First name:
+                <input id="createFirstName" class="inputField" type="text" name="firstName">
             </label>
-            <label> Password:
-                <input id="createPassword" class="CreationInputFields" type="password" name="password">
+            <label> Last name:
+                <input id="createLastName" class="inputField" type="text" name="lastName">
             </label>
+            <!-- <input  id="nameSubmit" class="submit" type="submit" name="submit"> -->
         </form>
-        <button id="createAccount">Submit</button>
-        <p id="errorMessages"></p>
+        <button id="nameSubmit" class="">Submit</button>
+        <div id="nameError" class="error"></div>
         <script src="form.js"></script>
     </body>
 
 </html>
-
-
