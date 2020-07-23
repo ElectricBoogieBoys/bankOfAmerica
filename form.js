@@ -1,36 +1,34 @@
 let createFirstName = document.getElementById('createFirstName');
 let createLastName = document.getElementById('createLastName');
 let nameSubmit = document.getElementById('nameSubmit');
-// let nameArray = [];
+let nameArray = [];
 
 // createFirstName.addEventListener('keyup', );
 // createLastName.addEventListener('keyup', );
 nameSubmit.addEventListener('click', validNames);
 
 function validNames() {
-  console.log('clicker');
   event.preventDefault();
 
-  // let firstName = document.getElementById('createFirstName').value;
-  // let lastName = document.getElementById('createLastName').value;
-  let testCharacter = /^(?=.*\W).*$/
+  // let testCharacter = /^(?=.*\W).*$/
 
-  if(testCharacter.test(createFirstName.value)) {
+  if(2 > 1) {
+    let saveNames = new Object(createFirstName.value + " " + createLastName.value)
+    nameArray.push(saveNames);
+    let numberOfNames = ;
+    console.log('all user real names', nameArray[numberOfNames]);
+    
+  }
+  if(1 > 2) {
     console.log('bad first name');
-
   }
   else {
-    console.log('good first name');
+    
   }
-
-  if(testCharacter.test(createLastName.value)) {
-    console.log('bad last name');
-  }
-  else {
-    console.log('good last name');
-  }
-
-
-  // checks if either field is empty
-  //takes the inputs and saves them
 }
+
+    // localStorage.setItem('nameArray', nameArray);
+    // JSON.stringify('nameArray', nameArray);
+    // JSON.parse(('nameArray', nameArray));
+    // localStorage.getItem('nameArray', nameArray);
+    // console.log(nameArray);
