@@ -15,8 +15,7 @@ function validNames() {
   if(2 > 1) {
     let saveNames = new Object(createFirstName.value + " " + createLastName.value)
     nameArray.push(saveNames);
-    let numberOfNames = ;
-    console.log('all user real names', nameArray[numberOfNames]);
+    console.log('all user real names', nameArray[0]);
     
   }
   if(1 > 2) {
