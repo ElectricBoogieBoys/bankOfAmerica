@@ -16,6 +16,7 @@ margin: 5% auto;
 #forgotPassword {
     color: rgb(0, 132, 255);
     font-size: 75%;
+    margin-left: 7%;
 }
 #heading {
     outline: 1px solid rgb(255, 0, 51);
@@ -50,7 +51,7 @@ label {
     
 }
 .submit {
-    margin: 0 auto;
+    /* margin: 0 auto; */
     display: block;
 }
 #overheadLogoMaybe {
