@@ -1,29 +1,31 @@
 
-/* .somethingsWrong {
+ .somethingsWrong {
     font-family: sans-serif;
     color: rgb(255,0,0);
-    position: relative;
-    top: 250px;
-    left: 50%; 
-    margin: auto;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
 }
+/* .secondInp {
+margin: 5% auto;
+} */
 .passwordStuff {
-    position: relative;
+    width: 25% ;
+    margin: 0 auto;
 }
-
+#forgotPassword {
+    color: rgb(0, 132, 255);
+    font-size: 75%;
+}
+#heading {
+    outline: 1px solid rgb(255, 0, 51);
+    padding-top: 5%;
+    padding-bottom: 1%;
+}
+/*
 .firstInp {
     position: relative;
     top: 210px;
-    left: 50%;
-}
-.secondInp {
-    position: absolute;
-    top: 16.25em;
-    left: 50%;
-}
-#forgotPassword {
-    position: absolute;
-    top: 150%;
     left: 50%;
 }
 #submitButton {
@@ -33,11 +35,28 @@
     width: 80px;
 } */
 #form {
-    outline: 1px solid red;
+     outline: 1px solid red; 
     width: 50%;
-    height: 500px;
     margin: 200px auto ;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    
 }
 label {
-    margin: 5% auto;
+    margin: 2% auto;
+    display: block ;
+    width: 50%;
+    
+    
 }
+.submit {
+    margin: 0 auto;
+    display: block;
+}
+#overheadLogoMaybe {
+    width: 100% auto;
+    margin: auto;
+}
+/* #navBar {
+
+} */
