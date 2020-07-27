@@ -25,3 +25,8 @@ function validNames() {
     
   }
 }
+
+let savePass = new Object(confirm.value)
+PassArray.push(savePass);
+let lastOfPassArray = PassArray.length - 1;
+console.log('all passwords', passArray[lastOfPassArray]);

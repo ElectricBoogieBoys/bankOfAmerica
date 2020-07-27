@@ -12,9 +12,10 @@ let passArray = [];
 let passwordFlag = false;
 //setting up my regex
 let lengthCheck = /.{8,20}$/
-let validCheck = /[^@#*()+={}\/?~,.-_]/
-let variedCheck = /(?=A-Z)(?=\d)(?=!$%^&;:''""<>)/
-let uniqueCheck = /[^\d{3,} a-z{3,} A-Z{3,}]/
+//let validCheck = /[A-Za-z0-9!$%^&;:''""<>]*/g
+let validCheck = /^(?=.*\d)(?=.*[A-Z])(?!.*[@#*$^+={}?\/~,])(.{8,15})$/g
+let variedCheck = /(?=A-Z)(?=\d)(?=!$%^&;:''""<>)/g
+let uniqueCheck = /[^\d{3,} a-z{3,} A-Z{3,}]/g
 
 
 form.addEventListener('keyup', checkPass)
@@ -29,8 +30,10 @@ if(lengthCheck.test(pass.value)){
 
 //checks if all characters are valid
 if(validCheck.test(pass.value)){
+  console.log('yes it works', pass.value)
   valid.classList.add("liCorrect");
 }else{
+  console.log('no it doesnt work')
   valid.classList.remove("liCorrect");
 }
 
@@ -62,7 +65,10 @@ function testWrite(){
   //if(re.test(pass.value)){
   console.log('passed regex text')
   if((pass.value)===(confirm.value)){
-    console.log(confirm.value, pass.value);
+    let savePass = new Object(confirm.value)
+    PassArray.push(savePass);
+    let lastOfPassArray = PassArray.length - 1;
+    console.log('all passwords', passArray[lastOfPassArray]);
   }else{
     error.innerHTML = "<p> Your passwords don't seem to match, please try again </p>"
   } 
