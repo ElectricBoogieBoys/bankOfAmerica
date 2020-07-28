@@ -1,9 +1,8 @@
 
-
  .somethingsWrong {
     font-family: sans-serif;
-    color: rgb(255,0,0);
     width: 50%;
+    color: rgb(255, 51, 51);
     margin: 0 auto;
     text-align: center;
 }
@@ -20,7 +19,6 @@ margin: 5% auto;
     margin-left: 7%;
 }
 #heading {
-    outline: 1px solid rgb(255, 0, 51);
     padding-top: 5%;
     padding-bottom: 1%;
 }
@@ -37,7 +35,6 @@ margin: 5% auto;
     width: 80px;
 } */
 #form {
-     outline: 1px solid red; 
     width: 50%;
     margin: 200px auto ;
     padding-top: 10%;
@@ -62,7 +59,6 @@ label {
 /* #navBar {
 
 } */
-=======
 #test {
     font-family: sans-serif;
 }
