@@ -30,10 +30,8 @@ if(lengthCheck.test(pass.value)){
 
 //checks if all characters are valid
 if(validCheck.test(pass.value)){
-  console.log('yes it works', pass.value)
   valid.classList.add("liCorrect");
 }else{
-  console.log('no it doesnt work')
   valid.classList.remove("liCorrect");
 }
 
