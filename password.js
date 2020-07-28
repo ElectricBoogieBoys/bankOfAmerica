@@ -13,14 +13,17 @@ let passwordFlag = false;
 //setting up my regex
 let lengthCheck = /.{8,20}$/
 //let validCheck = /[A-Za-z0-9!$%^&;:''""<>]*/g
-let validCheck = /^(?=.*\d)(?=.*[A-Z])(?!.*[@#*$^+={}?\/~,])(.{8,15})$/g
-let variedCheck = /(?=A-Z)(?=\d)(?=!$%^&;:''""<>)/g
-let uniqueCheck = /[^\d{3,} a-z{3,} A-Z{3,}]/g
-
+let validCheck = /^(?=.*\d)(?=.*[A-Z])(?!.*[!$%^&;:''""<>])(.{8,15})$/g
+//let validCheck = /^(?=.*\d)(?=.*[A-Z])(?!.*[@#*$^+={}?\/~,])(.{8,15})$/g
+let variedCheck = /(?=.*[@#*$^+={}?\/~,])/g
+//let variedCheck = /(?=.*[!$%^&;:''""<>])/g
+let uniqueCheck = /(?:([A-za-z0-9])\1{1,1}\1{1,1})*/g
+//let uniqueCheck = /[^\d{3,} a-z{3,} A-Z{3,}]/g
 
 form.addEventListener('keyup', checkPass)
 
 function checkPass() {
+  console.log('password is', pass.value)
 //checks password length
 if(lengthCheck.test(pass.value)){
   length.classList.add("liCorrect");
@@ -36,7 +39,8 @@ if(validCheck.test(pass.value)){
 }
 
 //checks if theres a capital, number and symbol
-if(variedCheck.test(pass.value)){
+if(!variedCheck.test(pass.value)){
+  console.log('varied check passed')
   varied.classList.add("liCorrect");
 }else{
   varied.classList.remove("liCorrect");
