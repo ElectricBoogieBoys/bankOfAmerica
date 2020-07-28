@@ -14,7 +14,6 @@ nameSubmit.addEventListener('click', validNames);
 
 // This function makes sure that the names out in by the user are valid
 function validNames() {
-  event.preventDefault();
 
   // These are regex tester for the if statements
   let testCharacter = /^[^!@#$%^&*()_+={}\[\]|\\:;“’<,>.?๐฿0123456789]*$/
@@ -23,7 +22,7 @@ function validNames() {
   // This tests to see if the user filled in all input fiels or not
   // If they did not an error message will be displayed to the user
   if(emptyStringTest.test(createFirstName.value) && emptyStringTest.test(createLastName.value)) {
-    console.log('invalid name input 1234');
+    // console.log('invalid name input 1234');
     document.getElementById('nameInputError').style.display = "block";
   }
   // This tests for any invalid characters that should not be in a name
@@ -35,6 +34,7 @@ function validNames() {
     let lastOfNameArray = nameArray.length - 1;
     console.log('all user names', nameArray[lastOfNameArray]);
     document.getElementById('nameInputError').style.display = "none";
+    welcome.style.display = "none";
 
     // temporary test code to display a welcome message on the  landing page when the final log in is finished
     welcome.style.display = "block";
@@ -42,7 +42,35 @@ function validNames() {
   }
   // Just in case there is some other problem this will give an error message
     else {
-      console.log('invalid name input');
+    //   console.log('invalid name input');
       document.getElementById('nameInputError').style.display = "block";
+      welcome.style.display = "none";
     }
   };
+
+
+  let createUsername = document.getElementById('createUsername');
+  let usernameSubmit = document.getElementById('usernameSubmit');
+
+  usernameSubmit.addEventListener('click', checkUsername);
+
+  // checkUsername will check if the username is greater than 8 character and will check if it is blank
+  // if everything is valid then the username will be saved
+  // if either of those  
+  function checkUsername() {
+    let emptyUsernameTest = /^$/
+
+    if() {
+
+    }
+    else if(){
+
+    }
+    else {
+
+    }
+  }
+
+  // If the previous stuff is correct, hide it and show create username part
+  // user inputs a username and if it fits the requirements and is not already taken it is saved for future use
+  // if it is not correct an error message is show (either 'invalid username' error or 'username taken' error)
