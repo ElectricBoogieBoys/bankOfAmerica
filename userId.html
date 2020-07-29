@@ -13,12 +13,14 @@
         <h1>Create a Username</h1>
         <p>Please create a username that is between 8 and 20 characters long.</p>
 
+        <!-- The user will enter a username in this form -->
         <form>
             <label> Username:
                 <input id="createUsername" class="inputField" type="text" maxlength="20" name="Username">
             </label>
             <button id="usernameSubmit" class="submitButton">Submit</button>
         </form>
+        <!-- these are the different types of error that can be displayed to the user -->
         <p id="usernameBlank">Please fill in a username.</p>
         <p id="invalidUsername">This username is too short. Please use a different username.</p>
         <p id="usernameTaken">This username has already been taken. Please choose a different one.</p>
