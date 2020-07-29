@@ -1,3 +1,15 @@
 /* #createUsername {
     display: none;
 } */
+
+#usernameBlank {
+    display: none;
+}
+
+#invalidUsername {
+    display: none;
+}
+
+#usernameTaken {
+    display: none;
+}
