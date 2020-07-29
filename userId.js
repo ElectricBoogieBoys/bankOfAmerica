@@ -21,10 +21,11 @@ function checkUsername() {
         document.getElementById('invalidUsername').style.display = "block";
         document.getElementById('usernameTaken').style.display = "none";
         console.log('Too short.');
-    } else if (){
-        document.getElementById('usernameBlank').style.display = "none";
-        document.getElementById('invalidUsername').style.display = "none";
-        document.getElementById('usernameTaken').style.display = "block";
+    }
+    // else if (){
+    //     document.getElementById('usernameBlank').style.display = "none";
+    //     document.getElementById('invalidUsername').style.display = "none";
+    //     document.getElementById('usernameTaken').style.display = "block";
     } else {
         document.getElementById('usernameBlank').style.display = "none";
         document.getElementById('invalidUsername').style.display = "none";
