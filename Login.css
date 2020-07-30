@@ -1,5 +1,12 @@
 
 
+ #encapsulate {
+ background-color: rgb(144, 66, 144);
+ padding-top: 7%;
+ padding-bottom: 5%;
+    
+    
+ }
  .somethingsWrong {
     font-family: sans-serif;
     color: rgb(255,0,0);
@@ -15,7 +22,7 @@ margin: 5% auto;
     margin: 0 auto;
 }
 #forgotPassword {
-    color: rgb(0, 132, 255);
+    color: blue;
     font-size: 75%;
     margin-left: 7%;
 }
@@ -27,28 +34,25 @@ margin: 5% auto;
     width: 100%;
     
 }
+/* #username {
+
+} */
+/* #otherSide {
+
+} */
 /* #navBar {
      
 
-} */
-/*
-.firstInp {
-    position: relative;
-    top: 210px;
-    left: 50%;
-}
-#submitButton {
-    position: relative;
-    left: 50%;
-    top: 25em;
-    width: 80px;
 } */
 #form {
     width: 50%;
     margin: 200px auto ;
     padding-top: 10%;
     padding-bottom: 10%;
+    background-color: rgb(255, 156, 250);
+
     
+/* most of the styling is from this one label */
 }
 label {
     margin: 2% auto;
@@ -57,10 +61,7 @@ label {
     
     
 }
-.submit {
-    /* margin: 0 auto; */
-    display: block;
-}
+
 #overheadLogoMaybe {
     width: 100% auto;
     margin: auto;

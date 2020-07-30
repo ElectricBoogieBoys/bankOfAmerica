@@ -10,28 +10,33 @@
     
     <body>
         <div id="heading"><img src="https://via.placeholder.com/1890x90.png?text=Placeholder+image" alt="icon" id="overheadLogoMaybe"> </div>
+        <!-- <div class="borderUno" id="otherSide"> </div>  -->
         <!--This span will eventually be the navigation bar. (placeholder)-->
+        <div id="encapsulate">
         <span id="navBar"> </span> 
-        <div>
             <!--This form will collect the username and passwod of the person tryig to log in.-->
             <form id="form">
-                <label class="" name="Username:"> Username: <br />
+                <div id="username"><label class="" name="Username:"> Username: <br />
                     <input id="username" class="firstInp" type="text" name="username">
-                </label>
+                </label> </div>
                 
+                <div id="Password">
                 <label class="secondInp" name="Password:">
                     <span id="">Password: </span> 
                     <span id="forgotPassword" class="" >Forgot password?</span> <br />
                     <!--This button will allow the user to reset their password if they forget it. It should appear horizontally parallel to the password label above the password input field.-->
                     <input id="password" class="" type="password" name="password">
                 </label>
+                </div>
                 <!--This p tag represents where the error messages will show up.-->
                 <p id="error" class="somethingsWrong"></p>
                 <label>
                     <button id="submitButton" class="submit" type="submit" name="Log in">Login </button>
                 </label>
             </form>
+     
         </div>
+    </div>
         <script src="Login.js"></script>
     </body>
 
