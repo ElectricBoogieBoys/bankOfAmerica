@@ -29,16 +29,20 @@ function validNames() {
   // If either of the tests is true, an error message will be displayed to the user
   // Otherwise, the forst and last names will be put together in an object and placed into the 'nameArray' array
   else if(testCharacter.test(createFirstName.value) && testCharacter.test(createLastName.value)) {
-    let saveNames = new Object(createFirstName.value + " " + createLastName.value)
+    // let saveNames = new Object(createFirstName.value + " " + createLastName.value);
+
+    let saveNames = {
+      name: `${createFirstName.value} ${createLastName.value}`,
+    }
     nameArray.push(saveNames);
-    let lastOfNameArray = nameArray.length - 1;
-    console.log('all user names', nameArray[lastOfNameArray]);
+    // let lastOfNameArray = nameArray.length - 1;
+    console.log('all user names', nameArray);
     document.getElementById('nameInputError').style.display = "none";
     welcome.style.display = "none";
 
     // temporary test code to display a welcome message on the  landing page when the final log in is finished
-    welcome.style.display = "block";
-    welcome.innerHTML = ('Welcome ' + nameArray[lastOfNameArray] + '!');
+    // welcome.style.display = "block";
+    // welcome.innerHTML = ('Welcome ' + nameArray[lastOfNameArray] + '!');
   }
   // Just in case there is some other problem this will give an error message
     else {

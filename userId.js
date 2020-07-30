@@ -46,9 +46,13 @@ function checkUsername() {
         document.getElementById('usernameBlank').style.display = "none";
         document.getElementById('invalidUsername').style.display = "none";
         document.getElementById('usernameTaken').style.display = "none";
-        let saveUserIds = new Object(createUsername.value);
+        // let saveUserIds = new Object(createUsername.value);
+        let saveUserIds = {
+            username: createUsername.value,
+        }
         IDArray.push(saveUserIds);
-        let lastOfIDArray = IDArray.length - 1;
-        console.log('all user IDs', IDArray[lastOfIDArray]);
+        console.log('These are the usernames: ',IDArray);
+        // let lastOfIDArray = IDArray.length - 1;
+        // console.log('all user IDs', IDArray[lastOfIDArray]);
         }
 }
