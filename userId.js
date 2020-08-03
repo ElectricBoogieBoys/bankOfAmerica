@@ -25,7 +25,7 @@ function checkUsername() {
         document.getElementById('usernameBlank').style.display = "block";
         document.getElementById('invalidUsername').style.display = "none";
         document.getElementById('usernameTaken').style.display = "none";
-        console.log('Please enter a username.');
+        // console.log('Please enter a username.');
     } 
     // ckecks if the username is shorter than 8 characters
     // if that is the case then an error message will be displayed to the user
@@ -33,7 +33,7 @@ function checkUsername() {
         document.getElementById('usernameBlank').style.display = "none";
         document.getElementById('invalidUsername').style.display = "block";
         document.getElementById('usernameTaken').style.display = "none";
-        console.log('Too short.');
+        // console.log('Too short.');
     }
     // this will maybe be used later to check for a server error and than display a certain error message to the user
     // else if (){
