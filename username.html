@@ -3,7 +3,8 @@
 
     <head>
         <title>Sign Up</title>
-        <link rel="stylesheet" type="text/css" href="index.css">
+        <link rel="stylesheet" type="text/css" href="username.css">
+        
     </head>
 
     <body>
@@ -12,7 +13,7 @@
         <!-- Information/instructions for the user   -->
         <h1>Let's get started</h1>
         <p>Please provide the folllowing information for your enrollment.</p>
-        <!-- This is the form where the first and last naems will be typed in -->
+        <!-- This is the form where the first and last names will be typed in -->
         <form id="" class="form">
             <label> First name:
                 <input id="createFirstName" class="inputField" type="text" name="firstName">
@@ -22,16 +23,17 @@
             </label>
         </form>
         <!-- This button allows the user to submit their first and last names if the information is valid -->
-        <button id="nameSubmit" class="">Submit</button>
+        <button id="nameSubmit" class="submitButton">Submit</button>
         <!-- This will only display if there is something wrong with the names -->
         <div id="nameInputError" class="error">
             <p>Error: invalid first or last name. Please try again.</p>
         </div>
 
-        <!-- temporary placeholder: This will display a welcome message on the landing page when the final log in is finished-->
-        <div id="welcome"></div>
-
-        <script src="form.js"></script>
+            <!-- temporary placeholder: This will display a welcome message on the landing page when the final log in is finished-->
+            <div id="welcome"></div>
+        
+        <script src="username.js"></script>
+        <script src="register.js"></script>
     </body>
 
 </html>
