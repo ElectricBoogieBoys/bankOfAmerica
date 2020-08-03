@@ -5,3 +5,6 @@
 #welcome {
     display: none;
 }
+.error {
+    color: red;
+}

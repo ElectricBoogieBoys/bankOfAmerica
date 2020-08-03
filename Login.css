@@ -1,11 +1,16 @@
 
 
  #encapsulate {
- background-color: rgb(144, 66, 144);
+ background-color: rgb(156, 89, 156);
  padding-top: 7%;
  padding-bottom: 5%;
     
     
+ }
+ #submitButton {
+     text-align: center;
+     background-color: snow;
+     display: inline;
  }
  .somethingsWrong {
     font-family: sans-serif;
@@ -21,6 +26,9 @@ margin: 5% auto;
     width: 25% ;
     margin: 0 auto;
 }
+/* #password {
+    
+} */
 #forgotPassword {
     color: blue;
     font-size: 75%;
@@ -34,9 +42,8 @@ margin: 5% auto;
     width: 100%;
     
 }
-/* #username {
-
-} */
+ /* #username {
+}  */
 /* #otherSide {
 
 } */
@@ -49,7 +56,7 @@ margin: 5% auto;
     margin: 200px auto ;
     padding-top: 10%;
     padding-bottom: 10%;
-    background-color: rgb(217, 219, 101);
+    background-color: rgb(183, 192, 54);
 
     
 /* most of the styling is from this one label */
