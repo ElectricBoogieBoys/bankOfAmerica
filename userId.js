@@ -7,8 +7,8 @@ let submitButton = document.getElementById('form');
 
 // creates a new array where the usernames will remporarily be stored
 let IDArray = [];
-let check1 = true;
-let check2 = true;
+let check1 = false;
+let check2 = false;
 // the checkUsername function will run when the submit button is clicked
 // usernameSubmit.addEventListener('click', checkUsername);
 createUsername.addEventListener('keyup', checkUsername);
@@ -29,33 +29,43 @@ function checkUsername() {
         document.getElementById('invalidUsername').style.display = "none";
         document.getElementById('usernameTaken').style.display = "none";
         document.getElementById('goodUsername').style.display = "none";
-        let check1 = false;
+        check1 = false;
         // console.log('Please enter a username.');
     } 
     // ckecks if the username is shorter than 8 characters
     // if that is the case then an error message will be displayed to the user
-    else if(createUsername.value.length < 8){
+    else if(createUsername.value.length < 8) {
         document.getElementById('usernameBlank').style.display = "none";
         document.getElementById('invalidUsername').style.display = "block";
         document.getElementById('usernameTaken').style.display = "none";
         document.getElementById('goodUsername').style.display = "none";
-        let check2 = false;
+        check2 = false;
         // console.log('Too short.');
     }
-    // this will maybe be used later to check for a server error and than display a certain error message to the user
-    // else if (){
-    //     document.getElementById('usernameBlank').style.display = "none";
-    //     document.getElementById('invalidUsername').style.display = "none";
-    //     document.getElementById('usernameTaken').style.display = "block";
-    // } 
     // stores the usernames as ojects in an array (temporary)
     else {
         document.getElementById('usernameBlank').style.display = "none";
         document.getElementById('invalidUsername').style.display = "none";
         document.getElementById('usernameTaken').style.display = "none";
         document.getElementById('goodUsername').style.display = "block";
-        let check1 = true;
-        let check2 = true;
+        check1 = true;
+        check2 = true;
+    }
+    if(createUsername.value.length >= 8 && createUsername.value.length <= 20) {
+        axios.get(`https://dsya-server.herokuapp.com/team2/checkusername/${createUsername.value}`)
+            .then(response => {
+                console.log('response', response.data);
+                if(response.data === "user exists") {
+                    document.getElementById('usernameBlank').style.display = "none";
+                    document.getElementById('invalidUsername').style.display = "none";
+                    document.getElementById('usernameTaken').style.display = "block";
+                    document.getElementById('goodUsername').style.display = "none";
+                }
+            })
+            .catch(error => {
+                console.log(error);
+                // error messages go here 
+            })
     }
 }
 
