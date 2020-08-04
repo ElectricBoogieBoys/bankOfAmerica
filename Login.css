@@ -1,7 +1,7 @@
 
 
  #encapsulate {
- background-color: rgb(156, 89, 156);
+ background-color: rgb(143, 94, 143);
  padding-top: 7%;
  padding-bottom: 5%;
     
@@ -11,6 +11,16 @@
      text-align: center;
      background-color: snow;
      display: inline;
+     border-style: solid;
+     border-color: rgb(143, 94, 143);
+     border-radius: 20%;
+    
+ }
+ #submitButton:hover {
+     background-color: rgb(143, 94, 143);
+     color: black;
+     border-color: rgb(140, 94, 143);
+     border-radius: 2px;
  }
  .somethingsWrong {
     font-family: sans-serif;
@@ -30,10 +40,18 @@ margin: 5% auto;
     
 } */
 #forgotPassword {
-    color: blue;
+    color: rgb(56, 56, 230);
     font-size: 75%;
     margin-left: 7%;
+    transition: 0.3s;
+    opacity: 0.5;
 }
+#forgotPassword:hover {
+opacity: 1;
+}
+/* #forgotPassword:hover{
+
+} */
 #heading {
     padding-top: 5%;
     padding-bottom: 1%;
@@ -56,7 +74,7 @@ margin: 5% auto;
     margin: 200px auto ;
     padding-top: 10%;
     padding-bottom: 10%;
-    background-color: rgb(183, 192, 54);
+    background-color: rgb(220, 231, 57);
 
     
 /* most of the styling is from this one label */
