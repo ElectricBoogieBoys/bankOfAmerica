@@ -3,69 +3,68 @@
 
     <head>
         <title>Sign Up </title>
-
-        <link rel="stylesheet" type="text/css" href="username.css">
+        <link rel="stylesheet" type="text/css" href="Login.css">
+        <link rel="stylesheet" type="text/css" href="userId.css">
         <link rel="stylesheet" type="text/css" href="password.css">
     </head>
     
-    <body>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
+    <body id="encapsulate">
+        <!-- A header will eventually be coded here -->
+        <!--<span id="header"></span>-->
         
-        
-        <!--This span will eventually be the navigation bar. (placeholder)-->
+<!--This span will eventually be the navigation bar. (placeholder)-->
         <div id="header" class="header"></div> 
         <!--This form will collect the username and password of the person tryig to log in.-->
         <div>
             <h1></h1>
-            <form id="form" class="form">
+        <form id="form" class="form">
+            <!-- Information/instructions for the user   -->
+        <h1 style="text-align: center;">Create a Username and Password</h1>
+        <br>
+
                 <label class="" name="password">
-                    <p>enter password:</p>
+        <!-- The user will enter a username in this form -->
+        
+            <label> Username:
+                <input id="createUsername" class="inputField" type="text" maxlength="20" name="Username">
+            </label>
+            <!-- <button id="usernameSubmit" class="submitButton">Submit</button> -->
+       
+
+                <label>Enter Password:
                     <input id="password" class="feild" type="password" name="passord">
                 </label>
-                <label class="" name="confirm">
-                    <p>confirm password:</p>
+                <label class="" name="confirm"> Confirm Password:
                     <input id="confirm" class="feild" type="password" name="confirm">
                 </label>
                 <label>
                     <input id="submitButton" class="submit" type="submit" name="Log in">
                 </label>
-            </form>
+        </form>
+        <br>
+
+            <!-- these are the different types of error that can be displayed to the user -->
+            <p>Please create a username that is between 8 and 20 characters long.</p>
+            <p id="usernameBlank">Please fill in a username.</p>
+            <p id="invalidUsername">This username is too short. Please use a different username.</p>
+            <p id="usernameTaken">This username has already been taken. Please choose a different one.</p>
+            <p id="goodUsername">Good Username!</p?
+
             <!--This p tag represents where the error messages will show up.-->
             <div id="error">
-                <p>your password needs to</p> 
+                <p>Password requirements:</p> 
                 <ul>
-                    <li id="length">have between 8 and 20 characters</li>
-                    <li id="invalidCharacters">not have @#*()+={}/?~,.-_</li>
-                    <li id="varied">contain at least 1 number, 1 uppercase letter and 1 symbol</li>
+                    <li id="length"> Between 8 and 20 characters</li> 
+                    <br>
+                    <li id="invalidCharacters">Not have @#*()+={}/?~,.-_</li>
+                    <br>
+                    <li id="varied">Contains at least 1 number, 1 uppercase letter and 1 symbol</li>
+                    <br>
                     <li id="unique">Not repeat the same number or letter more than 3 times in a row</li>
                 </ul>
             </div>
         </div>
-        <script src="username.js"></script>
+        <script src="userId.js"></script>
         <script src="password.js"></script>
     </body>
 

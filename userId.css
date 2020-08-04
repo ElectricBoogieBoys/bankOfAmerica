@@ -1,11 +1,19 @@
 #usernameBlank {
     display: none;
+    color: red;
 }
 
 #invalidUsername {
     display: none;
+    color: red;
 }
 
 #usernameTaken {
     display: none;
+    color: red;
+}
+
+#goodUsername {
+    display: none;
+    color: green;
 }
