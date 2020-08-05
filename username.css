@@ -1,0 +1,10 @@
+#nameInputError {
+    display: none;
+}
+
+#welcome {
+    display: none;
+}
+.error {
+    color: red;
+}
