@@ -26,6 +26,11 @@ function validNames() {
   if(emptyStringTest.test(createFirstName.value) && emptyStringTest.test(createLastName.value)) {
     // console.log('invalid name input 1234');
     document.getElementById('nameInputError').style.display = "block";
+    document.getElementById('emailInputError').style.display = "none";
+  }
+  else if(emptyStringTest.test(inputEmail.value)) {
+    document.getElementById('emailInputError').style.display = "block";
+    document.getElementById('nameInputError').style.display = "none";
   }
   // This tests for any invalid characters that should not be in a name
   else if(testCharacter.test(createFirstName.value) && testCharacter.test(createLastName.value)) {
@@ -39,15 +44,15 @@ function validNames() {
       email: inputEmail.value,
     }
     emailArray.push(saveEmail);
-    // let lastOfNameArray = nameArray.length - 1;
     console.log('all user names', nameArray);
     console.log('all user emails', emailArray);
     document.getElementById('nameInputError').style.display = "none";
-    welcome.style.display = "none";
-
+    document.getElementById('emailInputError').style.display = "none";
+    
+    // welcome.style.display = "none";
     // temporary test code to display a welcome message on the  landing page when the final log in is finished
     // welcome.style.display = "block";
-    // welcome.innerHTML = ('Welcome ' + nameArray[lastOfNameArray] + '!');
+    // welcome.innerHTML = ('Welcome ' + nameArray + '!');
   }
   // Just in case there is some other problem this will give an error message
     else {
