@@ -4,7 +4,7 @@ let createLastName = document.getElementById('createLastName');
 let inputEmail = document.getElementById('inputEmail');
 
 // Calls in the submit button
-let nameSubmit = document.getElementById('nameSubmit');
+let nameSubmit = document.getElementById('firstPageForm');
 
 let nameArray = [];
 let emailArray = [];
@@ -18,7 +18,7 @@ nameSubmit.addEventListener('click', validNames);
 
 // This function makes sure that the names out in by the user are valid
 function validNames() {
-
+  event.preventDefault();
   // These are regex tester for the if statements
   let testCharacter = /^[^!@#$%^&*()_+={}\[\]|\\:;“’<,>.?๐฿0123456789]*$/
 
@@ -48,6 +48,7 @@ function validNames() {
     console.log('all user emails', emailArray);
     document.getElementById('nameInputError').style.display = "none";
     document.getElementById('emailInputError').style.display = "none";
+    window.location.href = "register.html";
     
     // welcome.style.display = "none";
     // temporary test code to display a welcome message on the  landing page when the final log in is finished

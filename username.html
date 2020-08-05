@@ -3,18 +3,19 @@
 
     <head> 
         <title>Sign Up</title>
+        <link rel="stylesheet" type="text/css" href="Login.css">
         <link rel="stylesheet" type="text/css" href="username.css">
         
     </head>
 
-    <body>
+    <body class="encapsulate">
         <!-- A header will eventually be coded here -->
         <span id="header"></span>
         <!-- Information/instructions for the user   -->
         <h1>Let's get started</h1>
         <p>Please provide the folllowing information for your enrollment.</p>
         <!-- This is the form where the first and last names will be typed in -->
-        <form id="" class="form">
+        <form id="firstPageForm" class="form">
             <label> First name:
                 <input id="createFirstName" class="inputField" type="text" name="firstName">
             </label>
@@ -24,9 +25,9 @@
             <label> Email:
                 <input id="inputEmail" class="inputField" type="email" name="email">
             </label>
+            <input id="nameSubmit" class="submitButton" type="submit" name="submit">
         </form>
-        <!-- This button allows the user to submit their first and last names if the information is valid -->
-        <button id="nameSubmit" class="submitButton">Submit</button>
+
         <!-- This will only display if there is something wrong with the names -->
         <div id="nameInputError" class="error">
             <p>Invalid first or last name. Please try again.</p>

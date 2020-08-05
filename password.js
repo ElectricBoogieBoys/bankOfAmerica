@@ -83,6 +83,7 @@ function testWrite(event){
 
     console.log('pushing it into array');
     console.log('all passwords', passArray);
+    window.location.href = "Login.html";
   }else{
     error.innerHTML = "<p> Your passwords don't seem to match, please try again </p>"
   } 
