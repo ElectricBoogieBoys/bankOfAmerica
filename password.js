@@ -76,10 +76,9 @@ function testWrite(event){
   event.preventDefault();
   
   if( pass.value === confirm.value){
-    console.log('passwords are matching');
-    document.getElementById("errorNotMatching").style.display = "none";
+    document.getElementById("errorNotMatching").style.color = "green";
   }else{
-    document.getElementById("errorNotMatching").style.display = "block";
+    document.getElementById("errorNotMatching").style.color = "red";
   } 
  
 }
