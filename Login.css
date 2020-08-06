@@ -49,10 +49,8 @@ margin: 5% auto;
     font-size: 75%;
     margin-left: 7%;
     transition: 0.2s;
-    opacity: 0.7;
 }
 #forgotPassword:hover {
-opacity: 1;
 cursor: pointer;
 }
 /* #forgotPassword:hover{
