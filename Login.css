@@ -86,3 +86,7 @@ li{
 *{
     font-family: Arial, Helvetica, sans-serif;
 }
+
+#loginError {
+    display: none;
+}

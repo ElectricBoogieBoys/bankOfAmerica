@@ -16,7 +16,7 @@
         <span id="navBar"> </span> 
             <!--This form will collect the username and passwod of the person tryig to log in.-->
             <form id="form">
-                <div id="username"><label class="" name="Username:"> Username: <br />
+                <div id=""><label class="" name="Username:"> Username: <br />
                     <input id="username" class="firstInp" type="text" name="username">
                 </label> </div>
                 
@@ -33,10 +33,12 @@
                 <label>
                     <button id="submitButton" class="submit" type="submit" name="Log in">Login </button>
                 </label>
+                <p id="loginError">Please input a username and password to continue.</p>
             </form>
      </div>
         </div>
-      <script src="Login.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+        <script src="Login.js"></script>
     </body>
 
 </html>
