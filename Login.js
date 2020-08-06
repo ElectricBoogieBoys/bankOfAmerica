@@ -9,10 +9,8 @@ function loginFunction(event) {
   event.preventDefault();
   if(emptyTest.test(name.value) || emptyTest.test(pass.value)) {
     document.getElementById('loginError').style.display = "block";
-    console.log('maybe');
   }
   else {
-    console.log('no');
     console.log('name', name.value);
     console.log('password', pass.value);
     document.getElementById('loginError').style.display = "none";

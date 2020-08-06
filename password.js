@@ -23,7 +23,8 @@ let variedCheck = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[!~$%^&<>]).*$/;
 let uniqueCheck = /([a-z!~$%^&<>0-9])\1\1/ig;
 //let uniqueCheck = /[^\d{3,} a-z{3,} A-Z{3,}]/g
 
-form.addEventListener('keyup', checkPass)
+form.addEventListener('keyup', checkPass);
+form.addEventListener('keyup', testWrite);
 
 function checkPass() {
 
@@ -75,16 +76,10 @@ function testWrite(event){
   event.preventDefault();
   
   if( pass.value === confirm.value){
-    
-    
-    // passArray.push(savePass);
-    
-
-    // console.log('pushing it into array');
-    // console.log('all passwords', passArray);
-    // window.location.href = "Login.html";
+    console.log('passwords are matching');
+    document.getElementById("errorNotMatching").style.display = "none";
   }else{
-    error.innerHTML = "<p> Your passwords don't seem to match, please try again </p>"
+    document.getElementById("errorNotMatching").style.display = "block";
   } 
  
 }
