@@ -13,6 +13,12 @@ let check2 = false;
 // usernameSubmit.addEventListener('click', checkUsername);
 createUsername.addEventListener('keyup', checkUsername);
 submitButton.addEventListener('submit', submitUsername);
+submitButton.addEventListener('submit', createUser);
+// if(passwordFlag === true && confirmFlag === true){
+//     console.log('we are adding an even listener');
+    
+// }
+
   // checkUsername will check if the username is greater than 8 character and will check if it is blank
   // if everything is valid then the username will be saved
   // if either of those  
@@ -79,7 +85,40 @@ function submitUsername() {
         let saveUserIds = {
             username: createUsername.value,
         }
+        localStorage.setItem('username', JSON.stringify(saveUserIds));
         IDArray.push(saveUserIds);
         console.log('These are the usernames: ',IDArray);
     }
+}
+
+function createUser() {
+    event.preventDefault();
+    console.log('realName', JSON.parse(localStorage.getItem('realName')));
+    console.log('email', JSON.parse(localStorage.getItem('email')));
+    console.log('password', JSON.parse(localStorage.getItem('password')));
+
+    let realName = JSON.parse(localStorage.getItem('realName'));
+    let email = JSON.parse(localStorage.getItem('email'));
+    let username = createUsername.value;
+    let password = JSON.parse(localStorage.getItem('password'));
+
+    console.log('confirmFlag from password.js', confirmFlag);
+
+    localStorage.clear();
+    let user = {
+        realName: realName,
+        email: email,
+        username: username,
+        password: password,
+    }
+    axios.post('https://dsya-server.herokuapp.com/team2/createuser/', user) 
+        .then(response => {
+            console.log('response.data', response.data);
+            window.location.replace('http://127.0.0.1:5501/Login.html');
+        })
+        .catch(error => {
+            console.log('error', error.text);
+        })
+    console.log('user', user);
+
 }

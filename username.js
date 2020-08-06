@@ -1,3 +1,5 @@
+localStorage.clear();
+
 // Calls in the form inputs
 let createFirstName = document.getElementById('createFirstName');
 let createLastName = document.getElementById('createLastName');
@@ -36,16 +38,17 @@ function validNames() {
   else if(testCharacter.test(createFirstName.value) && testCharacter.test(createLastName.value)) {
     // let saveNames = new Object(createFirstName.value + " " + createLastName.value);
 
-    let saveNames = {
-      name: `${createFirstName.value} ${createLastName.value}`,
-    }
-    nameArray.push(saveNames);
-    let saveEmail = {
-      email: inputEmail.value,
-    }
-    emailArray.push(saveEmail);
-    console.log('all user names', nameArray);
-    console.log('all user emails', emailArray);
+    let name = `${createFirstName.value} ${createLastName.value}`
+    // nameArray.push(saveNames);
+    let email = inputEmail.value
+
+    console.log('username.js name',name);
+    console.log('username.js email',email);
+    localStorage.setItem('realName', JSON.stringify(name));
+    localStorage.setItem('email', JSON.stringify(email));
+    // emailArray.push(saveEmail);
+    // console.log('all user names', nameArray);
+    // console.log('all user emails', emailArray);
     document.getElementById('nameInputError').style.display = "none";
     document.getElementById('emailInputError').style.display = "none";
     window.location.href = "register.html";

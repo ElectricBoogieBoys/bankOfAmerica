@@ -66,7 +66,7 @@ function checkPass() {
   }
 
   if(passwordFlag === true && confirmFlag === true){
-    form.addEventListener("submit", testWrite);
+    let savePass = confirm.value;
   }
 }
 
@@ -76,14 +76,13 @@ function testWrite(event){
   
   if( pass.value === confirm.value){
     
-    let savePass = {
-      password: confirm.value, 
-    }
-    passArray.push(savePass);
+    
+    // passArray.push(savePass);
+    
 
-    console.log('pushing it into array');
-    console.log('all passwords', passArray);
-    window.location.href = "Login.html";
+    // console.log('pushing it into array');
+    // console.log('all passwords', passArray);
+    // window.location.href = "Login.html";
   }else{
     error.innerHTML = "<p> Your passwords don't seem to match, please try again </p>"
   } 
