@@ -25,7 +25,7 @@ function validNames() {
   let testCharacter = /^[^!@#$%^&*()_+={}\[\]|\\:;“’<,>.?๐฿0123456789]*$/
 
   // This tests to see if the user filled in all input fiels or not
-  if(emptyStringTest.test(createFirstName.value) && emptyStringTest.test(createLastName.value)) {
+  if(emptyStringTest.test(createFirstName.value) || emptyStringTest.test(createLastName.value)) {
     // console.log('invalid name input 1234');
     document.getElementById('nameInputError').style.display = "block";
     document.getElementById('emailInputError').style.display = "none";
@@ -51,7 +51,7 @@ function validNames() {
     // console.log('all user emails', emailArray);
     document.getElementById('nameInputError').style.display = "none";
     document.getElementById('emailInputError').style.display = "none";
-    window.location.href = "register.html";
+    window.location.replace('http://127.0.0.1:5501/register.html');
     
     // welcome.style.display = "none";
     // temporary test code to display a welcome message on the  landing page when the final log in is finished
