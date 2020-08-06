@@ -19,6 +19,7 @@
      border-radius: 20%;
      margin: 0 auto;
      transition-duration: 0.4s;
+     cursor: pointer;
     
  }
  #submitButton:hover {
