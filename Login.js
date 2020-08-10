@@ -8,12 +8,12 @@ form.addEventListener('submit', loginFunction);
 function loginFunction(event) {
   event.preventDefault();
   if(emptyTest.test(name.value) || emptyTest.test(pass.value)) {
-    document.getElementById('loginError').style.display = "block";
+    document.getElementById('loginError1').style.display = "block";
   }
   else {
     console.log('name', name.value);
     console.log('password', pass.value);
-    document.getElementById('loginError').style.display = "none";
+    document.getElementById('loginError1').style.display = "none";
 
     return axios.get('https://dsya-server.herokuapp.com/team2/login/', {
       auth: {
@@ -23,7 +23,15 @@ function loginFunction(event) {
     }) 
       .then(response => {
         console.log('response.data', response.data);
-        window.location.replace('http://127.0.0.1:5501/landing.html');
+        if(response.data === 'Password incorrect') {
+          document.getElementById('loginError1').style.display = "none";
+          document.getElementById('loginError2').style.display = "block";
+        }
+        else {
+          document.getElementById('loginError1').style.display = "none";
+          document.getElementById('loginError2').style.display = "block";
+          window.location.replace('http://127.0.0.1:5501/landing.html');
+        }
           })
       .catch(error => {
         console.log('error', error.text);

@@ -87,6 +87,10 @@ li{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-#loginError {
+#loginError1 {
+    display: none;
+}
+
+#loginError2 {
     display: none;
 }
