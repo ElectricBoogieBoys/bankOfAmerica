@@ -1,13 +1,16 @@
-#encapsulate {
+body {
  background-color: rgb(143, 94, 143);
+}
+ #catch-all {
+ 
  padding-top: 7%;
  padding-bottom: 5%;
     
     
  }
- #heading {
-     background-color: rgb(143, 94, 143);
- }
+ /* #heading {
+    
+ } */
  #submitButton {
      text-align: center;
      background-color: white;
@@ -18,11 +21,11 @@
      margin: 0 auto;
      transition-duration: 0.4s;
      cursor: pointer;
-    
+     
  }
  #submitButton:hover {
      background-color: rgb(143, 94, 143);
-     color: snow;
+     color: rgb(229, 226, 226);
      border-color: rgb(140, 94, 143);
      border-radius: 2px;
  }
@@ -43,8 +46,16 @@ margin: 5% auto;
 /* #password {
     
 } */
+#register {
+    margin-top: 5% auto;
+    
+
+    
+}
+/* #confirm */
+
 #forgotPassword {
-    color: rgb(27, 27, 235);
+    color: rgb(42, 42, 197);
     font-size: 75%;
     margin-left: 7%;
     transition: 0.2s;
@@ -52,9 +63,6 @@ margin: 5% auto;
 #forgotPassword:hover {
 cursor: pointer;
 }
-/* #forgotPassword:hover{
-
-} */
 #heading {
     padding-top: 5%;
     padding-bottom: 1%;
