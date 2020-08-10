@@ -18,7 +18,7 @@ amnesia.addEventListener('click' , function() {
 
 })
 // for registering an account
-// document.getElementById('register').onclick = function testChange() {
+document.getElementById('register').onclick = function testChange() {
  
 
-// }
+ }
