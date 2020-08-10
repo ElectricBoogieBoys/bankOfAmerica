@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Sign Up </title>
+
+        <!-- <link rel="stylesheet" type="text/css" href="username.css">
+        <link rel="stylesheet" type="text/css" href="password.css"> -->
+        <link rel="stylesheet" type="text/css" href="Login.css">
+    </head>
+    <body>
+    <form id="form">
+        <div id="username">
+         <label class="" name="Username:"> Username: <br />
+            <input id="username" class="firstInp" type="text" name="username">
+         </label> 
+        </div>
+        
+        <div id="Password">
+         <label class="secondInp" name="Password:">
+             <span id="">Password: </span> 
+              <br />
+             <!--This button will allow the user to reset their password if they forget it. It should appear horizontally parallel to the password label above the password input field.-->
+             <input id="password" class="" type="password" name="password"> <br />
+             <span id="confirmed">confirm password: </span> <br />
+             <input id="confirm" type="password" name="repeat password">
+         </label>
+        </div>
+        <!--This p tag represents where the error messages will show up.-->
+        <p id="error" class="somethingsWrong"></p>
+        <div class="loginButton">
+            <button id="submitButton" class="submit" type="submit" name="Log in">Sign up </button> 
+        </div>
+    </form>
+    <script src=""></script>
+    </body>

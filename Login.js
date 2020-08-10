@@ -18,3 +18,4 @@ document.getElementById('forgotPassword').onclick = function testChange() {
   document.getElementById('forgotPassword').innerHTML="check linked email";
 }
 
+
