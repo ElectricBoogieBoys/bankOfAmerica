@@ -12,7 +12,7 @@ function testWrite(){
   console.log(name.value, pass.value);
   
 };
-//to show the forgot password works
+//to show the forgot password's responsiveness
 document.getElementById('forgotPassword').onclick = function testChange() {
   document.getElementById('forgotPassword').style= "Color: red";
   document.getElementById('forgotPassword').innerHTML="check linked email";
