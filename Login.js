@@ -17,8 +17,8 @@ let amnesia = document.getElementById('forgotPassword');
 amnesia.addEventListener('click' , function() {
 
 })
-// for registering an account
-// document.getElementById('register').onclick = function testChange() {
+//for registering an account
+document.getElementById('register').onclick = function testChange() {
  
 
-// }
+}
