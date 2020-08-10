@@ -12,7 +12,7 @@
  }
  #submitButton {
      text-align: center;
-     background-color: snow;
+     background-color: white;
      display: inline;
      border-style: solid;
      border-color: rgb(143, 94, 143);
@@ -20,11 +20,11 @@
      margin: 0 auto;
      transition-duration: 0.4s;
      cursor: pointer;
-    
+     
  }
  #submitButton:hover {
      background-color: rgb(143, 94, 143);
-     color: snow;
+     color: rgb(229, 226, 226);
      border-color: rgb(140, 94, 143);
      border-radius: 2px;
  }
