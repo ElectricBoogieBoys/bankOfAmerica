@@ -11,8 +11,8 @@ function loginFunction(event) {
     document.getElementById('loginError1').style.display = "block";
   }
   else {
-    console.log('name', name.value);
-    console.log('password', pass.value);
+    // console.log('name', name.value);
+    // console.log('password', pass.value);
     document.getElementById('loginError1').style.display = "none";
 
     return axios.get('https://dsya-server.herokuapp.com/team2/login/', {
@@ -22,7 +22,7 @@ function loginFunction(event) {
       }
     }) 
       .then(response => {
-        console.log('response.data', response.data);
+        // console.log('response.data', response.data);
         if(response.data === 'Password incorrect') {
           document.getElementById('loginError1').style.display = "none";
           document.getElementById('loginError2').style.display = "block";

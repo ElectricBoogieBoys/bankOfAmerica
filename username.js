@@ -42,8 +42,8 @@ function validNames() {
     // nameArray.push(saveNames);
     let email = inputEmail.value
 
-    console.log('username.js name',name);
-    console.log('username.js email',email);
+    // console.log('username.js name',name);
+    // console.log('username.js email',email);
     localStorage.setItem('realName', JSON.stringify(name));
     localStorage.setItem('email', JSON.stringify(email));
     // emailArray.push(saveEmail);

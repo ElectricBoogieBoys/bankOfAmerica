@@ -71,7 +71,6 @@ function checkPass() {
   }
 }
 
-//test console logging the values//
 function testWrite(event){
   event.preventDefault();
   
