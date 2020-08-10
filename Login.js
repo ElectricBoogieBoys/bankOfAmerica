@@ -13,9 +13,12 @@ function testWrite(){
   
 };
 //to show the forgot password's responsiveness
-document.getElementById('forgotPassword').onclick = function testChange() {
-  document.getElementById('forgotPassword').style= "Color: red";
-  document.getElementById('forgotPassword').innerHTML="check linked email";
-}
+let amnesia = document.getElementById('forgotPassword'); 
+amnesia.addEventListener('click' , function() {
 
+})
+// for registering an account
+// document.getElementById('register').onclick = function testChange() {
+ 
 
+// }
