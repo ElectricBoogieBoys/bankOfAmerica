@@ -86,7 +86,8 @@ cursor: pointer;
     margin: 200px auto ;
     padding-bottom: 10%;
     padding-top: 10%;
-    background-color: rgb(220, 231, 57);
+    background-color: rgb(121, 122, 105);
+    border-radius: 200px;
 
     
 /* most of the styling is from this one label */
