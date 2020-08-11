@@ -12,20 +12,22 @@
         <!-- A header will eventually be coded here -->
         <span id="header"></span>
         <!-- Information/instructions for the user   -->
-        <h1>Let's get started</h1>
-        <p>Please provide the folllowing information for your enrollment.</p>
+        
         <!-- This is the form where the first and last names will be typed in -->
-        <form id="firstPageForm" class="form">
-            <label> First name:
-                <input id="createFirstName" class="inputField" type="text" name="firstName">
+        <form id="form" class="form">
+            <h1>Let's get started</h1>
+            <p>Please provide the folllowing information for your enrollment.</p>
+
+            <label> 
+                <input id="createFirstName" class="inputField" type="text" name="firstName" placeholder="First name">
             </label>
-            <label> Last name:
-                <input id="createLastName" class="inputField" type="text" name="lastName">
+            <label>
+                <input id="createLastName" class="inputField" type="text" name="lastName" placeholder="Last name">
             </label>
-            <label> Email:
-                <input id="inputEmail" class="inputField" type="email" name="email">
+            <label>
+                <input id="inputEmail" class="inputField" type="email" name="email" placeholder="Email">
             </label>
-            <input id="nameSubmit" class="submit" type="submit" name="submit">
+            <input id="submitButton" class="submit" type="submit" name="submit">
         </form>
         <br>
         <a href="http://127.0.0.1:5501/Login.html">already have an account?</a>

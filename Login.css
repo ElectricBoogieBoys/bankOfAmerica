@@ -120,19 +120,19 @@ cursor: pointer;
 
     } */
    
-    #form {
+    /*#form {
         width: 50%;
         margin: 0 auto ;
         padding-top: 5%;
         padding-bottom: 5%;
         background-color: rgb(217, 219, 101);
-} 
+} */
 #form {
     width: 50%;
-    margin: 200px auto ;
+    margin: auto ;
     padding-bottom: 10%;
-    padding-top: 10%;
-    background-color: rgb(220, 231, 57);
+    padding-top: 5%;
+    background-color: #81726a;
 }
 
     
@@ -165,10 +165,10 @@ cursor: pointer;
     font-family: sans-serif;
 }
 li{
-    color: red;
+    color: rgb(255, 29, 29);
 }
 .liCorrect{
-    color: green;
+    color: rgb(3, 223, 3);
 }
 
 *{
