@@ -6,7 +6,7 @@ let createLastName = document.getElementById('createLastName');
 let inputEmail = document.getElementById('inputEmail');
 let form = document.getElementById('firstPageForm');
 // Calls in the submit button
-let nameSubmit = document.getElementById('firstPageForm');
+let nameSubmit = document.getElementById('nameSubmit');
 
 let nameArray = [];
 let emailArray = [];
