@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 
@@ -13,35 +12,40 @@
             <img src="https://via.placeholder.com/1890x90.png?text=Placeholder+image" alt="icon" id="overheadLogoMaybe"> 
         </div>
         <!--This span will eventually be the navigation bar. (placeholder)-->
-        <div id="catch-all">
+        <div class="encapsulate">
+        <span id="navBar"> </span> 
             <!--This form will collect the username and passwod of the person tryig to log in.-->
-            <form id="form">
-                <div id="username">
-                 <label class="" name="Username:"> Username: <br />
+            <form id="form" class="form">
+                <div id="">
+                  <label class="" name="Username:"> Username: <br />
                     <input id="username" class="firstInp" type="text" name="username">
                  </label> 
                 </div>
                 
                 <div id="Password">
                  <label class="secondInp" name="Password:">
-                    <span id="">Password: </span> 
-                    <a id="forgotPassword" href="examp.html" class="">Forgot password?</a>
-                     <br />
+                     <span id="">Password: </span> 
+                     <span id="forgotPassword" class="" >Forgot password?</span> <br />
                      <!--This button will allow the user to reset their password if they forget it. It should appear horizontally parallel to the password label above the password input field.-->
                      <input id="password" class="" type="password" name="password">
                  </label>
                 </div>
                 <!--This p tag represents where the error messages will show up.-->
                 <p id="error" class="somethingsWrong"></p>
+
+                <label>
+                    <button id="submitButton" class="submit" type="submit" name="Log in">Login </button>
+                </label>
+                <p id="loginError1" class="error">Please input a username and password to continue.</p>
+                <p id="loginError2" class="error">Password incorrect, please try again.</p>
                 <div class="loginButton">
-                    <button id="submitButton" class="submit" type="submit" name="Log in">Login </button> <br />
-                    <div id="register">Register</div>
+                <button id="submitButton" class="submit" type="submit" name="Log in">Login </button>
                 </div>
             </form>
         </div>
-      <script src="Login.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+        <script src="Login.js"></script>
     </body>
 
 </html>
-
 

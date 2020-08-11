@@ -1,24 +1,41 @@
-
 // setting up our objects//
 let name = document.getElementById('username');
 let pass = document.getElementById('password')
 let form = document.getElementById('form');
+let emptyTest = /^$/
 
-form.addEventListener("submit", testWrite);
+form.addEventListener('submit', loginFunction);
 
-//test console logging the values//
-function testWrite(){
+function loginFunction(event) {
   event.preventDefault();
-  console.log(name.value, pass.value);
-  
-};
-//to show the forgot password's responsiveness
-let amnesia = document.getElementById('forgotPassword'); 
-amnesia.addEventListener('click' , function() {
 
-})
-//for registering an account
-document.getElementById('register').onclick = function testChange() {
- 
+  if(emptyTest.test(name.value) || emptyTest.test(pass.value)) {
+    document.getElementById('loginError1').style.display = "block";
+  }
+  else {
+    document.getElementById('loginError1').style.display = "none";
 
+    return axios.get('https://dsya-server.herokuapp.com/team2/login/', {
+      auth: {
+        username: name.value,
+        password: pass.value,
+      }
+    }) 
+      .then(response => {
+        if(response.data === 'Password incorrect') {
+          document.getElementById('loginError1').style.display = "none";
+          document.getElementById('loginError2').style.display = "block";
+        }
+        else {
+          document.getElementById('loginError1').style.display = "none";
+          document.getElementById('loginError2').style.display = "block";
+          window.location.replace('http://127.0.0.1:5501/landing.html');
+        }
+          })
+      .catch(error => {
+        console.log('error', error.text);
+      })
+    }
 }
+
+
