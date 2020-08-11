@@ -1,4 +1,7 @@
-// setting up our objects
+
+
+
+// setting up our objects//
 let name = document.getElementById('username');
 let pass = document.getElementById('password')
 let form = document.getElementById('form');
@@ -8,6 +11,7 @@ form.addEventListener('submit', loginFunction);
 
 function loginFunction(event) {
   event.preventDefault();
+
   if(emptyTest.test(name.value) || emptyTest.test(pass.value)) {
     document.getElementById('loginError1').style.display = "block";
   }
@@ -36,3 +40,6 @@ function loginFunction(event) {
       })
     }
 }
+
+};
+
