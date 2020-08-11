@@ -4,7 +4,7 @@ localStorage.clear();
 let createFirstName = document.getElementById('createFirstName');
 let createLastName = document.getElementById('createLastName');
 let inputEmail = document.getElementById('inputEmail');
-
+let form = document.getElementById('firstPageForm');
 // Calls in the submit button
 let nameSubmit = document.getElementById('firstPageForm');
 
@@ -17,7 +17,7 @@ let welcome = document.getElementById('welcome');
 
 // Event listener that fires the 'validNames' function when when the submit button is clicked
 nameSubmit.addEventListener('click', validNames);
-
+form.addEventListener('keyup', checker);
 // This function makes sure that the names out in by the user are valid
 function validNames() {
   event.preventDefault();
@@ -42,6 +42,8 @@ function validNames() {
     localStorage.setItem('realName', JSON.stringify(name));
     localStorage.setItem('email', JSON.stringify(email));isplay = "none";
     document.getElementById('emailInputError').style.display = "none";
+    console.log(name);
+    console.log(email);
     window.location.replace('http://127.0.0.1:5501/register.html');
     
   }
@@ -49,5 +51,20 @@ function validNames() {
     else {
       document.getElementById('nameInputError').style.display = "block";
       welcome.style.display = "none";
+    }
+  }
+
+  function checker() {
+    if(emptyStringTest.test(createFirstName.value) || emptyStringTest.test(createLastName.value)) {
+      document.getElementById('nameInputError').style.display = "block";
+      document.getElementById('emailInputError').style.display = "none";
+    }
+    else if(emptyStringTest.test(inputEmail.value)) {
+      document.getElementById('emailInputError').style.display = "block";
+      document.getElementById('nameInputError').style.display = "none";
+    }
+    else {
+      document.getElementById('emailInputError').style.display = "none";
+      document.getElementById('nameInputError').style.display = "none";
     }
   }
