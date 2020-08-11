@@ -2,6 +2,10 @@
     display: none;
 }
 
+#emailInputError {
+    display: none;
+}
+
 #welcome {
     display: none;
 }

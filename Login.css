@@ -1,13 +1,56 @@
+
+
+
+ .encapsulate {
+ background-color: rgb(144, 66, 144);
+ /*padding-top: 7%;*/
+}
 body {
  background-color: rgb(143, 94, 143);
 }
  #catch-all {
- 
  padding-top: 7%;
  padding-bottom: 5%;
     
     
  }
+
+    .somethingsWrong {
+        font-family: sans-serif;
+        color: rgb(255,0,0);
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    /* .secondInp {
+    margin: 5% auto;
+    } */
+    .passwordStuff {
+        width: 25% ;
+        margin: 0 auto;
+    }
+
+    #forgotPassword {
+        color: blue;
+        font-size: 75%;
+        margin-left: 7%;
+    }
+
+    #header {
+        padding-top: 5%;
+        padding-bottom: 5%;
+        background-color: white;
+    }
+
+    #overheadLogoMaybe {
+        width: 100%;
+    
+    }
+    /* #username {
+
+    } */
+    /* #otherSide {
+
  /* #heading {
     
  } */
@@ -75,42 +118,49 @@ cursor: pointer;
 }  */
 /* #otherSide {
 
-} */
-/* #navBar {
-     
-
-} */
+    } */
+   
+    #form {
+        width: 50%;
+        margin: 0 auto ;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        background-color: rgb(217, 219, 101);
+} 
 #form {
     width: 50%;
     margin: 200px auto ;
     padding-bottom: 10%;
     padding-top: 10%;
     background-color: rgb(220, 231, 57);
+}
 
     
-/* most of the styling is from this one label */
-}
-label {
-    margin: 2% auto;
-    display: block ;
-    width: 50%;
+    /* most of the styling is from this one label */
+    
+    label {
+        margin: 2% auto;
+        display: block ;
+        width: 50%;
     
     
-}
+
+    }
+
 .loginButton {
     display: block;
     margin: auto auto auto 37%;
     
 }
 
-#overheadLogoMaybe {
-    width: 100% auto;
-    margin: auto;
-}
-/* #navBar {
 
-} */
+    #overheadLogoMaybe {
+        width: 100% auto;
+        margin: auto;
+    }
+    /* #navBar {
 
+    } */
 #test {
     font-family: sans-serif;
 }
@@ -119,4 +169,16 @@ li{
 }
 .liCorrect{
     color: green;
+}
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#loginError1 {
+    display: none;
+}
+
+#loginError2 {
+    display: none;
 }

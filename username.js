@@ -1,10 +1,16 @@
+localStorage.clear();
+
 // Calls in the form inputs
 let createFirstName = document.getElementById('createFirstName');
 let createLastName = document.getElementById('createLastName');
+let inputEmail = document.getElementById('inputEmail');
+
 // Calls in the submit button
-let nameSubmit = document.getElementById('nameSubmit');
-// This array is where the full names will be stored as objectsfor later use
+let nameSubmit = document.getElementById('firstPageForm');
+
 let nameArray = [];
+let emailArray = [];
+let emptyStringTest = /^$/
 
 // temporary test code to display a welcome message on the  landing page when the final log in is finished
 let welcome = document.getElementById('welcome');
@@ -14,40 +20,34 @@ nameSubmit.addEventListener('click', validNames);
 
 // This function makes sure that the names out in by the user are valid
 function validNames() {
-
+  event.preventDefault();
   // These are regex tester for the if statements
   let testCharacter = /^[^!@#$%^&*()_+={}\[\]|\\:;“’<,>.?๐฿0123456789]*$/
-  let emptyStringTest = /^$/
 
   // This tests to see if the user filled in all input fiels or not
-  // If they did not an error message will be displayed to the user
-  if(emptyStringTest.test(createFirstName.value) && emptyStringTest.test(createLastName.value)) {
-    // console.log('invalid name input 1234');
+  if(emptyStringTest.test(createFirstName.value) || emptyStringTest.test(createLastName.value)) {
     document.getElementById('nameInputError').style.display = "block";
+    document.getElementById('emailInputError').style.display = "none";
+  }
+  else if(emptyStringTest.test(inputEmail.value)) {
+    document.getElementById('emailInputError').style.display = "block";
+    document.getElementById('nameInputError').style.display = "none";
   }
   // This tests for any invalid characters that should not be in a name
-  // If either of the tests is true, an error message will be displayed to the user
-  // Otherwise, the forst and last names will be put together in an object and placed into the 'nameArray' array
   else if(testCharacter.test(createFirstName.value) && testCharacter.test(createLastName.value)) {
-    // let saveNames = new Object(createFirstName.value + " " + createLastName.value);
 
-    let saveNames = {
-      name: `${createFirstName.value} ${createLastName.value}`,
-    }
-    nameArray.push(saveNames);
-    // let lastOfNameArray = nameArray.length - 1;
-    console.log('all user names', nameArray);
-    document.getElementById('nameInputError').style.display = "none";
-    welcome.style.display = "none";
+    let name = `${createFirstName.value} ${createLastName.value}`
+    let email = inputEmail.value
 
-    // temporary test code to display a welcome message on the  landing page when the final log in is finished
-    // welcome.style.display = "block";
-    // welcome.innerHTML = ('Welcome ' + nameArray[lastOfNameArray] + '!');
+    localStorage.setItem('realName', JSON.stringify(name));
+    localStorage.setItem('email', JSON.stringify(email));isplay = "none";
+    document.getElementById('emailInputError').style.display = "none";
+    window.location.replace('http://127.0.0.1:5501/register.html');
+    
   }
   // Just in case there is some other problem this will give an error message
     else {
-    //   console.log('invalid name input');
       document.getElementById('nameInputError').style.display = "block";
       welcome.style.display = "none";
     }
-  };
+  }
