@@ -23,7 +23,8 @@ function validNames() {
   event.preventDefault();
   // These are regex tester for the if statements
   let testCharacter = /^[^!@#$%^&*()_+={}\[\]|\\:;“’<,>.?๐฿0123456789]*$/
-
+  let testEmail = /(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9]))\.){3}(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9])|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])/
+  
   // This tests to see if the user filled in all input fiels or not
   if(emptyStringTest.test(createFirstName.value) || emptyStringTest.test(createLastName.value)) {
     document.getElementById('nameInputError').style.display = "block";
@@ -34,7 +35,7 @@ function validNames() {
     document.getElementById('nameInputError').style.display = "none";
   }
   // This tests for any invalid characters that should not be in a name
-  else if(testCharacter.test(createFirstName.value) && testCharacter.test(createLastName.value)) {
+  else if(testCharacter.test(createFirstName.value) && testCharacter.test(createLastName.value) && testEmail.test(inputEmail.value)) {
 
     let name = `${createFirstName.value} ${createLastName.value}`
     let email = inputEmail.value
@@ -42,8 +43,6 @@ function validNames() {
     localStorage.setItem('realName', JSON.stringify(name));
     localStorage.setItem('email', JSON.stringify(email));isplay = "none";
     document.getElementById('emailInputError').style.display = "none";
-    console.log(name);
-    console.log(email);
     window.location.replace('http://127.0.0.1:5501/register.html');
     
   }
