@@ -1,6 +1,3 @@
-
-
-
 // setting up our objects//
 let name = document.getElementById('username');
 let pass = document.getElementById('password')
@@ -31,7 +28,7 @@ function loginFunction(event) {
         }
         else {
           document.getElementById('loginError1').style.display = "none";
-          document.getElementById('loginError2').style.display = "block";
+          document.getElementById('loginError2').style.display = "none";
           window.location.replace('http://127.0.0.1:5501/landing.html');
         }
           })
@@ -39,7 +36,4 @@ function loginFunction(event) {
         console.log('error', error.text);
       })
     }
-}
-
 };
-
