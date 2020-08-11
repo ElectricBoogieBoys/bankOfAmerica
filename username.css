@@ -9,3 +9,14 @@
 #welcome {
     display: none;
 }
+h1{
+    margin-left: 10%;
+}
+
+p{
+    margin-left: 10%;
+}
+
+#submitButton{
+    margin-left: 20%;
+}
