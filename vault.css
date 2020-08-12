@@ -1,18 +1,16 @@
-
-
- .encapsulate {
+.encapsulate {
     background-color: rgb(144, 66, 144);
     /*padding-top: 7%;*/
    }
    body {
-    background-color: rgb(144, 66, 144);
+    background-color: rgb(143, 94, 143);
    }
     #catch-all {
     padding-top: 7%;
     padding-bottom: 5%;
        
-       
     }
+    
    
        .somethingsWrong {
            font-family: sans-serif;
@@ -51,7 +49,7 @@
     /* #heading {
        
     } */
-    .submitButton {
+    #submitButton {
         text-align: center;
         background-color: white;
         display: inline;
@@ -63,7 +61,7 @@
         cursor: pointer;
         
     }
-    .submitButton:hover {
+    #submitButton:hover {
         background-color: rgb(143, 94, 143);
         color: rgb(229, 226, 226);
         border-color: rgb(140, 94, 143);
@@ -89,10 +87,7 @@
    #register {
        margin-top: 5% auto;
        margin: auto auto auto 37%;
-
-       
    
-       
    }
    /* #confirm */
    
@@ -117,20 +112,12 @@
    }  */
    /* #otherSide {
        } */
-      
-       /*#form {
-           width: 50%;
-           margin: 0 auto ;
-           padding-top: 5%;
-           padding-bottom: 5%;
-           background-color: rgb(217, 219, 101);
-   } */
    #form {
        width: 50%;
-       margin: auto ;
+       margin: 200px auto ;
        padding-bottom: 10%;
-       padding-top: 5%;
-       background-color: #474747;
+       padding-top: 10%;
+       background-color: rgb(220, 231, 57);
    }
    
        
@@ -140,9 +127,6 @@
            margin: 2% auto;
            display: block ;
            width: 50%;
-       
-       
-   
        }
    
    .loginButton {
@@ -162,10 +146,10 @@
        font-family: sans-serif;
    }
    li{
-       color: rgb(255, 29, 29);
+       color: red;
    }
    .liCorrect{
-       color: rgb(3, 223, 3);
+       color: green;
    }
    
    *{
