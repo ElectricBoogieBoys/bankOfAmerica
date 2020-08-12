@@ -34,11 +34,16 @@ body {
 }
 
 article {
-    background-color: silver;
+    background-color: lightgrey;
     width: 50%;
     padding-top: 15px;
     padding-bottom: 15px;
-    border-radius: 5%;
+    border-radius: 3%;
+}
+
+article:hover {
+    background-color: #474747;
+    color: lightgrey;
 }
 
 .input {
