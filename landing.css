@@ -1,5 +1,51 @@
 #welcome{
     text-align: center;
-    background-color: turquoise;
     font-family: sans-serif;
+}
+
+body {
+    background-color: rgb(144, 66, 144);
+    z-index: -1;
+}
+
+#container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-flow: column wrap;
+}
+
+#header {
+    /* background-image: url("https://cdn.pixabay.com/photo/2015/11/23/10/56/banner-1058143_960_720.jpg"); */
+    background-color: #474747;
+    height: 10%;
+    width: 100%;
+}
+
+.text {
+    width: 40%;
+}
+
+#footer {
+    background-color: #474747;
+    color: #474747;
+    height: 50px;
+    width: 100%;
+}
+
+article {
+    background-color: lightgrey;
+    width: 43%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 3%;
+}
+
+article:hover {
+    background-color: #474747;
+    color: lightgrey;
+}
+
+.input {
+    margin-bottom: 5px;
 }
