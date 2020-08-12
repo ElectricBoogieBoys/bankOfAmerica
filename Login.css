@@ -1,6 +1,4 @@
 
-
-
  .encapsulate {
  background-color: rgb(144, 66, 144);
  /*padding-top: 7%;*/
@@ -17,20 +15,44 @@ body {
     
  }
 
-    .somethingsWrong {
-        font-family: sans-serif;
-        color: rgb(255,0,0);
-        width: 50%;
-        margin: 0 auto;
-        text-align: center;
-    }
-    /* .secondInp {
-    margin: 5% auto;
+ 
+       .somethingsWrong {
+           font-family: sans-serif;
+           color: rgb(255,0,0);
+           width: 50%;
+           margin: 0 auto;
+           text-align: center;
+       }
+       /* .secondInp {
+       margin: 5% auto;
+       } */
+       .passwordStuff {
+           width: 25% ;
+           margin: 0 auto;
+       }
+   
+       #forgotPassword {
+           color: blue;
+           font-size: 75%;
+           margin-left: 7%;
+       }
+   
+       #header {
+           padding-top: 5%;
+           padding-bottom: 5%;
+           background-color: white;
+       }
+   
+       #overheadLogoMaybe {
+           width: 100%;
+       
+       }
+       /* #username {
+       } */
+       /* #otherSide {
+    /* #heading {
+       
     } */
-    .passwordStuff {
-        width: 25% ;
-        margin: 0 auto;
-    }
 
     #forgotPassword {
         
@@ -41,13 +63,64 @@ body {
     #header {
         padding-top: 5%;
         padding-bottom: 5%;
+        .submitButton {
+        text-align: center;
         background-color: white;
+        display: inline;
+        border-style: solid;
+        border-color: rgb(143, 94, 143);
+        border-radius: 20%;
+        margin: 0 auto;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        
     }
-
-    #overheadLogoMaybe {
-        width: 100%;
     
     }
+    .somethingsWrong {
+       font-family: sans-serif;
+       color: rgb(255,0,0);
+       width: 50%;
+       margin: 0 auto;
+       text-align: center;
+   }
+   /* .secondInp {
+   margin: 5% auto;
+   } */
+   .passwordStuff {
+       width: 25% ;
+       margin: 0 auto;
+   }
+   /* #password {
+       
+   } */
+   #register {
+       margin-top: 5% auto;
+       margin: auto auto auto 37%;
+
+       
+   
+       
+   }
+   /* #confirm */
+   
+   #forgotPassword {
+       color: rgb(42, 42, 197);
+       font-size: 75%;
+       margin-left: 7%;
+       transition: 0.2s;
+   }
+   #forgotPassword:hover {
+   cursor: pointer;
+   }
+   #heading {
+       padding-top: 5%;
+       padding-bottom: 1%;
+   }
+   #overheadLogoMaybe {
+       width: 100%;
+       
+   }
     /* #username {
 
     } */
@@ -107,13 +180,16 @@ margin: 5% auto;
     transition: 0.2s;
     margin-left: 12.5em;
 }
+      
 #forgotPassword:hover {
 cursor: pointer;
 }
+      
 #heading {
     padding-top: 5%;
     padding-bottom: 1%;
 }
+      
 #overheadLogoMaybe {
     width: 100%;
     
@@ -169,9 +245,11 @@ cursor: pointer;
 #test {
     font-family: sans-serif;
 }
+      
 li{
     color: #FF3333;
 }
+      
 .liCorrect{
     color: rgb(3, 223, 3);
 }
@@ -195,3 +273,59 @@ li{
     margin: 1em;
     color: #000;
 }
+
+      
+   }  */
+   /* #otherSide {
+       } */
+      
+       /*#form {
+           width: 50%;
+           margin: 0 auto ;
+           padding-top: 5%;
+           padding-bottom: 5%;
+           background-color: rgb(217, 219, 101);
+   } */
+   
+
+       /* most of the styling is from this one label */
+       
+       label {
+           margin: 2% auto;
+           display: block ;
+           width: 50%;
+       
+       
+   
+       }
+   
+   .loginButton {
+       display: block;
+       margin: auto auto auto 37%;
+       
+   }
+   
+   
+       #overheadLogoMaybe {
+           width: 100% auto;
+           margin: auto;
+       }
+       /* #navBar {
+       } */
+   #test {
+       font-family: sans-serif;
+   }
+
+   
+   *{
+       font-family: Arial, Helvetica, sans-serif;
+   }
+   
+   #loginError1 {
+       display: none;
+   }
+   
+   #loginError2 {
+       display: none;
+   }
+
