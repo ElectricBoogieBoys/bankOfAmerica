@@ -93,10 +93,11 @@ function createUser() {
         username: username,
         password: password,
     }
+    console.log('sending info', user)
     axios.post('https://dsya-server.herokuapp.com/team2/createuser/', user) 
         .then(response => {
             console.log('response.data', response.data);
-            window.location.replace('http://127.0.0.1:5501/Login.html');
+            //window.location.replace('http://127.0.0.1:5501/Login.html');
         })
         .catch(error => {
             console.log('error', error.text);
