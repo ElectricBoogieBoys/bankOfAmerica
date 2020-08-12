@@ -1,22 +1,21 @@
 
-
+ .encapsulate {
+ background-color: rgb(144, 66, 144);
+ /*padding-top: 7%;*/
+ background-image: url(pacman-4121590.png);
+ background-size: cover;
+}
+body {
+ background-color: rgb(144, 66, 144);
+}
+ #catch-all {
+ padding-top: 7%;
+ padding-bottom: 5%;
+    
+    
+ }
 
  
-
- .encapsulate {
-    background-color: rgb(144, 66, 144);
-    /*padding-top: 7%;*/
-   }
-   body {
-    background-color: rgb(144, 66, 144);
-   }
-    #catch-all {
-    padding-top: 7%;
-    padding-bottom: 5%;
-       
-       
-    }
-   
        .somethingsWrong {
            font-family: sans-serif;
            color: rgb(255,0,0);
@@ -54,7 +53,17 @@
     /* #heading {
        
     } */
-    .submitButton {
+
+    #forgotPassword {
+        
+        font-size: 75%;
+        margin-left: 7%;
+    }
+
+    #header {
+        padding-top: 5%;
+        padding-bottom: 5%;
+        .submitButton {
         text-align: center;
         background-color: white;
         display: inline;
@@ -66,11 +75,7 @@
         cursor: pointer;
         
     }
-    .submitButton:hover {
-        background-color: rgb(143, 94, 143);
-        color: rgb(229, 226, 226);
-        border-color: rgb(140, 94, 143);
-        border-radius: 2px;
+    
     }
     .somethingsWrong {
        font-family: sans-serif;
@@ -117,6 +122,159 @@
        
    }
     /* #username {
+
+    } */
+    /* #otherSide {
+
+ /* #heading {
+    
+ } */
+ .submitButton {
+     text-align: center;
+     background-color: white;
+     display: inline;
+     border-style: solid;
+     border-color: rgb(143, 94, 143);
+     border-radius: 20%;
+     margin: 0 auto;
+     transition-duration: 0.4s;
+     cursor: pointer;
+     color: black;
+ }
+ .submitButton:hover {
+     background-color: rgb(143, 94, 143);
+     color: rgb(229, 226, 226);
+     border-color: rgb(140, 94, 143);
+     border-radius: 2px;
+ }
+ .somethingsWrong {
+    font-family: sans-serif;
+    color: rgb(255,0,0);
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+/* .secondInp {
+margin: 5% auto;
+} */
+.passwordStuff {
+    width: 25% ;
+    margin: 0 auto;
+}
+/* #password {
+    
+} */
+#register {
+    margin-top: 5% auto;
+    
+
+    
+}
+/* #confirm */
+
+#forgotPassword {
+    color: #8181EA;
+    font-size: 75%;
+    font-weight: bold;
+    margin-left: 7%;
+    transition: 0.2s;
+    margin-left: 12.5em;
+}
+      
+#forgotPassword:hover {
+cursor: pointer;
+}
+      
+#heading {
+    padding-top: 5%;
+    padding-bottom: 1%;
+}
+      
+#overheadLogoMaybe {
+    width: 100%;
+    
+}
+ /* #username {
+}  */
+/* #otherSide {
+
+    } */
+   
+    /*#form {
+        width: 50%;
+        margin: 0 auto ;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        background-color: rgb(217, 219, 101);
+} */
+#form {
+    width: 50%;
+    margin: auto ;
+    padding-bottom: 10%;
+    padding-top: 5%;
+    background-color: #1C1C1C;
+    border-radius: 5%;
+}
+
+    
+    /* most of the styling is from this one label */
+    
+    label {
+        margin: 2% auto;
+        display: block ;
+        width: 50%;
+    
+    
+
+    }
+
+.loginButton {
+    display: block;
+    margin: auto auto auto 37%;
+    color: #000;
+}
+
+
+    #overheadLogoMaybe {
+        width: 100% auto;
+        margin: auto;
+    }
+    /* #navBar {
+
+    } */
+#test {
+    font-family: sans-serif;
+}
+      
+li{
+    color: #FF3333;
+}
+      
+.liCorrect{
+    color: rgb(3, 223, 3);
+}
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff
+}
+
+#loginError1 {
+    display: none;
+}
+
+#loginError2 {
+    display: none;
+}
+
+.feild{
+    width: 20em;
+    height: 2em;
+    margin: 1em;
+    color: #000;
+}
+
+      
    }  */
    /* #otherSide {
        } */
@@ -128,15 +286,8 @@
            padding-bottom: 5%;
            background-color: rgb(217, 219, 101);
    } */
-   #form {
-       width: 50%;
-       margin: auto ;
-       padding-bottom: 10%;
-       padding-top: 5%;
-       background-color: #474747;
-   }
    
-       
+
        /* most of the styling is from this one label */
        
        label {
@@ -164,12 +315,7 @@
    #test {
        font-family: sans-serif;
    }
-   li{
-       color: rgb(255, 29, 29);
-   }
-   .liCorrect{
-       color: rgb(3, 223, 3);
-   }
+
    
    *{
        font-family: Arial, Helvetica, sans-serif;
@@ -182,3 +328,4 @@
    #loginError2 {
        display: none;
    }
+

@@ -17,24 +17,30 @@
         <span id="navBar"> </span> 
             <!--This form will collect the username and passwod of the person tryig to log in.-->
             <form id="form" class="form">
+                
                 <div id="">
-                  <label class="" name="Username:"> Username: <br />
-                    <input id="username" class="firstInp" type="text" name="username">
+
+                  <label class="" name="Username:"> <br />
+                    <input id="username" class="firstInp feild" type="text" name="username" placeholder="Username">
                  </label> 
                 </div>
                 
-                <div id="Password">
+                  <div id="Password">
                  <label class="secondInp" name="Password:">
                      <span id="">Password: </span> 
                      <span id="forgotPassword" class="" >Forgot password?</span> <br />
                      <!--This button will allow the user to reset their password if they forget it. It should appear horizontally parallel to the password label above the password input field.-->
-                     <input id="password" class="" type="password" name="password">
+
+                     <input id="password" class="feild" type="password" name="password" placeholder="Password">
                  </label>
                 </div>
                 <!--This p tag represents where the error messages will show up.-->
                 <p id="error" class="somethingsWrong"></p>
+                <label>
+                    <button id="submitButton" class="submitButton" type="submit" name="Log in">Login </button>
+                </label>
 
-                
+      
                 <p id="loginError1" class="error">Please input a username and password to continue.</p>
                 <p id="loginError2" class="error">Password incorrect, please try again.</p>
                 <div class="loginButton">

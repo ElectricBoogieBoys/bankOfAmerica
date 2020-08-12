@@ -75,7 +75,7 @@ function testWrite(event){
   event.preventDefault();
   
   if( pass.value === confirm.value){
-    document.getElementById("errorNotMatching").style.color = "green";
+    document.getElementById("errorNotMatching").style.color = "rgb(3, 204, 3)";
   }else{
     document.getElementById("errorNotMatching").style.color = "red";
   } 
