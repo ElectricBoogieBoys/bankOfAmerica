@@ -4,6 +4,8 @@
  .encapsulate {
  background-color: rgb(144, 66, 144);
  /*padding-top: 7%;*/
+ background-image: url(pacman-4121590.png);
+ background-size: cover;
 }
 body {
  background-color: rgb(144, 66, 144);
@@ -31,7 +33,7 @@ body {
     }
 
     #forgotPassword {
-        color: blue;
+        
         font-size: 75%;
         margin-left: 7%;
     }
@@ -64,7 +66,7 @@ body {
      margin: 0 auto;
      transition-duration: 0.4s;
      cursor: pointer;
-     
+     color: black;
  }
  .submitButton:hover {
      background-color: rgb(143, 94, 143);
@@ -98,10 +100,12 @@ margin: 5% auto;
 /* #confirm */
 
 #forgotPassword {
-    color: rgb(42, 42, 197);
+    color: #8181EA;
     font-size: 75%;
+    font-weight: bold;
     margin-left: 7%;
     transition: 0.2s;
+    margin-left: 12.5em;
 }
 #forgotPassword:hover {
 cursor: pointer;
@@ -132,7 +136,8 @@ cursor: pointer;
     margin: auto ;
     padding-bottom: 10%;
     padding-top: 5%;
-    background-color: #474747;
+    background-color: #1C1C1C;
+    border-radius: 5%;
 }
 
     
@@ -150,7 +155,7 @@ cursor: pointer;
 .loginButton {
     display: block;
     margin: auto auto auto 37%;
-    
+    color: #000;
 }
 
 
@@ -165,7 +170,7 @@ cursor: pointer;
     font-family: sans-serif;
 }
 li{
-    color: rgb(255, 29, 29);
+    color: #FF3333;
 }
 .liCorrect{
     color: rgb(3, 223, 3);
@@ -173,6 +178,7 @@ li{
 
 *{
     font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff
 }
 
 #loginError1 {
@@ -181,4 +187,11 @@ li{
 
 #loginError2 {
     display: none;
+}
+
+.feild{
+    width: 20em;
+    height: 2em;
+    margin: 1em;
+    color: #000;
 }
