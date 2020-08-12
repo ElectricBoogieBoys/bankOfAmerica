@@ -1,8 +1,10 @@
 // calls in the form input for a username
 let createUsername = document.getElementById('createUsername');
-
+let createPassword = document.getElementById('confirm');
 // calls in the submit button
 let submitButton = document.getElementById('form');
+//const URL = 'https://electricboogieboys.github.io/bankOfAmerica/'
+const URL = 'http://127.0.0.1:5501/'
 
 // creates a new array where the usernames will remporarily be stored
 let IDArray = [];
@@ -84,22 +86,24 @@ function createUser() {
     let realName = JSON.parse(localStorage.getItem('realName'));
     let email = JSON.parse(localStorage.getItem('email'));
     let username = createUsername.value;
-    let password = JSON.parse(localStorage.getItem('password'));
+    //let password = JSON.parse(localStorage.getItem('password'));
+    let password = createPassword.value;
 
     localStorage.clear();
     let user = {
-        realName: realName,
+        name: realName,
         email: email,
         username: username,
         password: password,
     }
+    console.log('sending info', user)
     axios.post('https://dsya-server.herokuapp.com/team2/createuser/', user) 
         .then(response => {
             console.log('response.data', response.data);
-            window.location.replace('http://127.0.0.1:5501/Login.html');
+            //window.location.replace(`${URL}Login.html`);
         })
         .catch(error => {
-            console.log('error', error.text);
+            console.log('error', error.request.data);
         })
 
 }

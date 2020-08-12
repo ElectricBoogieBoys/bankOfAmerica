@@ -4,13 +4,16 @@ localStorage.clear();
 let createFirstName = document.getElementById('createFirstName');
 let createLastName = document.getElementById('createLastName');
 let inputEmail = document.getElementById('inputEmail');
-let form = document.getElementById('firstPageForm');
+let form = document.getElementById('form');
+
 // Calls in the submit button
 let nameSubmit = document.getElementById('nameSubmit');
 
 let nameArray = [];
 let emailArray = [];
 let emptyStringTest = /^$/
+//const URL = 'https://electricboogieboys.github.io/bankOfAmerica/'
+const URL = 'http://127.0.0.1:5501/'
 
 // temporary test code to display a welcome message on the  landing page when the final log in is finished
 let welcome = document.getElementById('welcome');
@@ -43,7 +46,7 @@ function validNames() {
     localStorage.setItem('realName', JSON.stringify(name));
     localStorage.setItem('email', JSON.stringify(email));isplay = "none";
     document.getElementById('emailInputError').style.display = "none";
-    window.location.replace('http://127.0.0.1:5501/register.html');
+    window.location.replace(`${URL}register.html`);
     
   }
   // Just in case there is some other problem this will give an error message
