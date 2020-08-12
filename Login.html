@@ -18,36 +18,33 @@
             <!--This form will collect the username and passwod of the person tryig to log in.-->
             <form id="form" class="form">
                 <div id="">
-                  <label class="" name="Username:"> <br />
-                    <input id="username" class="firstInp" type="text" name="username" placeholder="Username">
+                  <label class="" name="Username:"> Username: <br />
+                    <input id="username" class="firstInp" type="text" name="username">
                  </label> 
                 </div>
                 
                 <div id="Password">
                  <label class="secondInp" name="Password:">
-                     <span id=""></span> 
+                     <span id="">Password: </span> 
                      <span id="forgotPassword" class="" >Forgot password?</span> <br />
                      <!--This button will allow the user to reset their password if they forget it. It should appear horizontally parallel to the password label above the password input field.-->
-                     <input id="password" class="" type="password" name="password" placeholder="Password">
+                     <input id="password" class="" type="password" name="password">
                  </label>
                 </div>
                 <!--This p tag represents where the error messages will show up.-->
                 <p id="error" class="somethingsWrong"></p>
 
-                <label>
-                    <button id="submitButton" class="submit" type="submit" name="Log in">Login </button> <br />
-                    <a class="Register" href="register.html">no account? register here</a>
-                </label>
+                
                 <p id="loginError1" class="error">Please input a username and password to continue.</p>
                 <p id="loginError2" class="error">Password incorrect, please try again.</p>
-                <!-- <div class="loginButton">
-                <button id="submitButton" class="submit" type="submit" name="Log in">Login </button>
-                </div> -->
-                
+                <div class="loginButton">
+                    <button id="submitButton" class="submit" type="submit" name="Log in">Login </button> 
+                </div>
+                <div id="register">
+                <p>no account?</p>
+                <a class="Register" href="register.html">register here</a>
+                </div>
             </form>
         </div>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
         <script src="Login.js"></script>
-    </body>
-
-</html>
