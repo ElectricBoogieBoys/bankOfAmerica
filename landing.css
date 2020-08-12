@@ -33,3 +33,14 @@ body {
     width: 100%;
 }
 
+article {
+    background-color: silver;
+    width: 50%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 5%;
+}
+
+.input {
+    margin-bottom: 5px;
+}
