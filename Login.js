@@ -30,7 +30,7 @@ function loginFunction(event) {
           document.getElementById('loginError1').style.display = "none";
           document.getElementById('loginError2').style.display = "none";
           window.location.replace(`${URL}landing.html`);
-          //localStorage.setItem('user', JSON.stringify(response.data))
+          localStorage.setItem('user', JSON.stringify(response.data))
         }
           })
       .catch(error => {
