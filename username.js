@@ -12,8 +12,8 @@ let nameSubmit = document.getElementById('nameSubmit');
 let nameArray = [];
 let emailArray = [];
 let emptyStringTest = /^$/
-//const URL = 'https://electricboogieboys.github.io/bankOfAmerica/'
-const URL = 'http://127.0.0.1:5501/'
+const URL = 'https://electricboogieboys.github.io/bankOfAmerica/'
+//const URL = 'http://127.0.0.1:5501/'
 
 // temporary test code to display a welcome message on the  landing page when the final log in is finished
 let welcome = document.getElementById('welcome');
