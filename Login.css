@@ -63,7 +63,9 @@ body {
     #header {
         padding-top: 5%;
         padding-bottom: 5%;
-        .submitButton {
+    }
+    
+    .submitButton {
         text-align: center;
         background-color: white;
         display: inline;
@@ -73,9 +75,6 @@ body {
         margin: 0 auto;
         transition-duration: 0.4s;
         cursor: pointer;
-        
-    }
-    
     }
     .somethingsWrong {
        font-family: sans-serif;
