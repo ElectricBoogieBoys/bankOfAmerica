@@ -3,8 +3,8 @@ let createUsername = document.getElementById('createUsername');
 let createPassword = document.getElementById('confirm');
 // calls in the submit button
 let submitButton = document.getElementById('form');
-//const URL = 'https://electricboogieboys.github.io/bankOfAmerica/'
-const URL = 'http://127.0.0.1:5501/'
+const URL = 'https://electricboogieboys.github.io/bankOfAmerica/'
+//const URL = 'http://127.0.0.1:5501/'
 
 // creates a new array where the usernames will remporarily be stored
 let IDArray = [];
