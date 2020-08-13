@@ -6,6 +6,8 @@
 body {
     background-color: rgb(144, 66, 144);
     z-index: -1;
+    background-image: url("pacman-4121590.png");
+    background-size: cover;
 }
 
 #container {
@@ -34,7 +36,8 @@ body {
 }
 
 article {
-    background-color: lightgrey;
+    background-color: #1C1C1C;
+    color: white;
     width: 43%;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -42,7 +45,7 @@ article {
 }
 
 article:hover {
-    background-color: #474747;
+    background-color: rgb(70, 62, 62);
     color: lightgrey;
 }
 
