@@ -100,7 +100,7 @@ function createUser() {
     axios.post('https://dsya-server.herokuapp.com/team2/createuser/', user) 
         .then(response => {
             console.log('response.data', response.data);
-            //window.location.replace(`${URL}Login.html`);
+            window.location.replace(`${URL}Login.html`);
         })
         .catch(error => {
             console.log('error', error.request.data);
