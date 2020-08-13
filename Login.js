@@ -29,8 +29,9 @@ function loginFunction(event) {
         else {
           document.getElementById('loginError1').style.display = "none";
           document.getElementById('loginError2').style.display = "none";
-          window.location.replace(`${URL}landing.html`);
           localStorage.setItem('user', JSON.stringify(response.data))
+          window.location.replace(`${URL}landing.html`);
+          
         }
           })
       .catch(error => {
