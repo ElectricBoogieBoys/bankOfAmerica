@@ -4,6 +4,7 @@ let pass = document.getElementById('password')
 let form = document.getElementById('form');
 let emptyTest = /^$/
 const URL = 'https://electricboogieboys.github.io/bankOfAmerica/'
+//const URL = 'http://127.0.0.1:5501/'
 form.addEventListener('submit', loginFunction);
 
 function loginFunction(event) {
@@ -29,8 +30,9 @@ function loginFunction(event) {
         else {
           document.getElementById('loginError1').style.display = "none";
           document.getElementById('loginError2').style.display = "none";
-          window.location.replace(`${URL}landing.html`);
           localStorage.setItem('user', JSON.stringify(response.data))
+          window.location.replace(`${URL}landing.html`);
+          
         }
           })
       .catch(error => {
